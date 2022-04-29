@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labproductcategory\views\templates\admin\list.tpl" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="c0aeec13483690985db78c33a54b6710">
+        <source>Category Group</source>
+        <target>Category Group</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labproductcategory\views\templates\admin\list.tpl:26</note>
+      </trans-unit>
+      <trans-unit id="b9b371458ab7c314f88b81c553f6ce51">
+        <source>Hook</source>
+        <target>Hook</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labproductcategory\views\templates\admin\list.tpl:45</note>
+      </trans-unit>
+      <trans-unit id="1e3a2ee7c13d74cb927e958ba680de97">
+        <source>Type display</source>
+        <target>Type display</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labproductcategory\views\templates\admin\list.tpl:48</note>
+      </trans-unit>
+      <trans-unit id="a0925476f70856079fc6f34624318308">
+        <source>View Category</source>
+        <target>View Category</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labproductcategory\views\templates\admin\list.tpl:60</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labproductcategory\views\templates\admin\list_catitem.tpl" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="7dce122004969d56ae2e0245cb754d35">
+        <source>Edit</source>
+        <target>Edit</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labproductcategory\views\templates\admin\list_catitem.tpl:54</note>
+      </trans-unit>
+      <trans-unit id="f2a6c498fb90ee345d997f888fce3b18">
+        <source>Delete</source>
+        <target>Delete</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labproductcategory\views\templates\admin\list_catitem.tpl:59</note>
+      </trans-unit>
+      <trans-unit id="41c696aa7e0f7e41d85c8124f2432ccd">
+        <source>Category List</source>
+        <target>Category List</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labproductcategory\views\templates\admin\list_catitem.tpl:27</note>
+      </trans-unit>
+      <trans-unit id="06516926c4f88b55bc20128c8b542ca8">
+        <source>Style:</source>
+        <target>Style:</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labproductcategory\views\templates\admin\list_catitem.tpl:46</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

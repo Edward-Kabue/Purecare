@@ -1,0 +1,228 @@
+.lab_category_feature{
+    clear: both;	
+    position: relative;	
+	margin-bottom: 30px;
+}
+.category_feature{
+	background: #fff none repeat scroll 0 0;
+    overflow: hidden;
+    padding: 0 70px;
+	position:relative;
+}
+.lab_category_feature .title_block{text-align:center;}
+.lab_category_feature .title_block span{
+	background: #3a3838 none repeat scroll 0 0;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "Gotham",sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 40px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+.lab_category_feature .lab_boxnp2{
+	right:0;
+}
+.lab_category_feature .row{
+
+}
+.labCategoryFeature .owl-item .item-inner {
+	padding: 0;
+}
+.labCategoryFeature  .owl-item .item{
+	padding: 0;
+    position: relative;
+}
+.labCategoryFeature .item-inner{
+}
+.labCategoryFeature .item{
+	position:relative;
+	padding-left:15px;
+	margin-bottom: 15px;
+}
+.labCategoryFeature .owl-item:last-child .item{
+	border-right:none;
+}
+.labCategoryFeature .item .cat-img{position:relative;}
+.labCategoryFeature .item .cat-img a{
+	display:block;
+	position:relative;
+}
+.labCategoryFeature .item .cat-img a:before{
+	 background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    bottom: 80%;
+    content: "";
+    left: 80%;
+    position: absolute;
+    right: 20%;
+    top: 20%;
+	-webkit-transition: all 600ms ease;
+	-moz-transition: all 600ms ease;
+	-ms-transition: all 600ms ease;
+	-o-transition: all 600ms ease;
+	transition: all 600ms ease;
+}
+.labCategoryFeature .item .cat-img a:after{
+	 background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    bottom: 20%;
+    content: "";
+    left: 20%;
+    position: absolute;
+    right: 80%;
+    top: 80%;
+	-webkit-transition: all 600ms ease;
+	-moz-transition: all 600ms ease;
+	-ms-transition: all 600ms ease;
+	-o-transition: all 600ms ease;
+	transition: all 600ms ease;
+}
+.labCategoryFeature .item:hover .cat-img a:after,
+ .labCategoryFeature .item:hover .cat-img a:before{
+	 opacity:1;
+	 top:0;
+	 bottom:0;
+	 left:0;
+	 right:0;
+	 	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+ }
+  .labCategoryFeature .item:hover .cat-img a:after
+	 
+ }
+.labCategoryFeature .item .cat-img img{
+	width:100%;
+}
+.labCategoryFeature .item .content-cate{
+	background: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+} 
+
+
+.labCategoryFeature .item:hover .content-cate{
+	opacity:1;
+} 
+.labCategoryFeature .item .categoryName{
+	background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -50px;
+	opacity:0;
+    z-index: 9;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+.labCategoryFeature .item:hover .categoryName{
+	top:0;
+	opacity:1;
+}
+.labCategoryFeature .item .categoryName a{
+	color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.labCategoryFeature .item .categoryName a:hover{
+	color:#83a979;
+}
+.labCategoryFeature .item .lab-view-more{
+	border:1px solid #fff;
+	color:#fff;
+	padding: 0 30px;
+    line-height: 40px;
+    display: inline-block;
+	font-family: "Montserrat",sans-serif;
+	font-size:13px;
+	font-weight:400;
+	text-transform:uppercase;
+}
+.labCategoryFeature .item .lab-view-more:hover{
+	border-color:#bca480;
+	background-color:#bca480;
+	color:#fff;
+}
+.labCategoryFeature .item .sub-cat{
+	clear:both;
+}
+.labCategoryFeature .item .sub-cat ul{
+	display:inline-block;
+	margin:0;
+}
+.labCategoryFeature .item .sub-cat li{
+	margin-bottom: 10px;
+}
+.labCategoryFeature .item .sub-cat li a{
+	color: #fff;
+    display: block;
+    font-size: 14px;
+    padding-left: 15px;
+    position: relative;
+    text-transform: capitalize;
+}
+.labCategoryFeature .item .sub-cat li a:before{
+    content: "\f111";
+	color: #999999;
+    font-family: fontawesome;
+    font-size: 5px;
+    left: 2px;
+    position: absolute;
+    top: 0;
+}
+.labCategoryFeature .item .sub-cat li a:hover{
+	color: #83a979;
+}
+.lab_boxnp a{
+	color: #3a3838;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+}
+.category_feature:hover .lab_boxnp a{
+	opacity:1;
+}
+.lab_boxnp a.prev {left: 15px;}
+.lab_boxnp a.next {right: 15px;}
+@media (min-width: 992px) and (max-width: 1024px){
+	.labCategoryFeature .item .categoryName a {
+		font-size: 15px;
+		line-height: 30px;
+		padding: 0 10px;
+	}	
+}
+@media (min-width: 992px){
+	.labCategoryFeature .item-inner.first-in-line{clear:left;}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.labCategoryFeature .item-inner.first-in-line{clear:left;}
+}
+@media (max-width: 767px){
+	.labCategoryFeature .item .cat-img {
+		margin-bottom: 30px;
+	}
+	.category_feature{padding:0 15px;}
+}
+@media (min-width: 480px) and (max-width: 767px){
+	.labCategoryFeature .item-inner.first-item-of-mobile-line{clear:left;}
+}
+@media (max-width: 479px){
+	.labCategoryFeature .item-inner{clear:left; width:100%;}
+}

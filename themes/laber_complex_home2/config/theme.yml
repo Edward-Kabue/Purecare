@@ -1,0 +1,217 @@
+name: laber_complex_home2
+display_name: laber_complex_home2
+version: 1.0.0
+author:
+  name: "PrestaShop Team"
+  email: "pub@prestashop.com"
+  url: "http://www.prestashop.com"
+
+meta:
+  compatibility:
+      from: 1.7.0.0
+      to: ~
+
+  available_layouts:
+    layout-full-width:
+      name: Full Width
+      description: No side columns, ideal for distraction-free pages such as product pages.
+    layout-both-columns:
+      name: Three Columns
+      description: One large central column and 2 side columns.
+    layout-left-column:
+      name: Two Columns, small left column
+      description: Two columns with a small left column
+    layout-right-column:
+      name: Two Columns, small right column
+      description: Two columns with a small right column
+
+assets:
+  # If you're using this theme as child and you want to load
+  # the parent theme assets, uncomment this line.
+#  use_parent_assets: true
+
+  # The following lines are showing how to load assets in your page
+  # Uncomment and change value to start loading css or js files
+#  css:
+#    all:
+#      - id: custom-lib-style
+#        path: assets/css/custom-lib.css
+#    product:
+#      - id: product-style
+#        path: assets/css/product.css
+#        media: all
+#        priority: 200
+#  js:
+#    cart:
+#      - id: cat-extra-lib
+#        path: assets/js/cart-lib.js
+
+
+global_settings:
+  configuration:
+    PS_IMAGE_QUALITY: png
+  modules:
+   to_enable:
+    - ps_linklist
+    - blockwishlist
+    - productcomments
+    - labthemeoptions
+    - labpopupnewsletter
+    - labmegamenu
+    - labvegamenu
+    - labslideshow
+    - labproductcategory
+    - labproductfilter
+    - labcustomhtml
+    - labproductnextprev
+    - labtestimonials
+    - labmanufacture
+    - labcountdown
+    - labblocksearch
+  hooks:
+    modules_to_hook:
+      displayNav1:
+        - labcustomhtml
+        - ps_languageselector
+        - ps_currencyselector
+        - ps_contactinfo
+      displayNav2:
+        - labcustomhtml
+        - ps_customersignin
+      displayTop:
+        - ps_shoppingcart
+        - blockwishlist
+      displaySearch:
+      - labblocksearch
+      displayHome:
+        - labcustomhtml
+        - labproductfilter
+      displayFooterBefore:
+        - labcustomhtml
+        - ps_emailsubscription
+      displayFooter:
+        - labcustomhtml
+        - ps_linklist
+        - ps_customeraccountlinks
+      displayFooterAfter:
+        - labcustomhtml
+        - ps_socialfollow
+      displayLeftColumn:
+        - ps_categorytree
+        - ps_facetedsearch
+        - labcustomhtml
+      displayProductAdditionalInfo:
+        - ps_sharebuttons
+      displayReassurance:
+        - blockreassurance
+      displayOrderConfirmation2:
+        - ps_featuredproducts
+      displayCrossSellingShoppingCart:
+        - ps_featuredproducts
+      displayFooterProduct:
+        - ps_categoryproducts
+      displayProductNextPrev:
+        - labproductnextprev
+      displayAdminlabthemeoptions:
+        - labthemeoptions
+      displaylabthemeoptions:
+        - labthemeoptions
+      displayTimecountdown:
+        - labcountdown
+      displayImageSlider:
+        - labslideshow
+        - labcustomhtml
+      displayPosition1:
+        - labproductfilter
+        - labproductcategory
+        - labcustomhtml
+      displayPosition2:
+        - labproductcategory
+        - labproductfilter
+        - labcustomhtml
+      displayPosition3:
+        - labproductcategory
+        - labproductfilter
+        - labcustomhtml
+      displayPosition4:
+        - labproductcategory
+        - labproductfilter
+        - labcustomhtml
+      displayPosition5:
+        - labproductcategory
+        - labproductfilter
+        - labcustomhtml
+      displayPosition6:
+        - labproductcategory
+        - labproductfilter
+        - labcustomhtml
+      displaypopupnewsletter:
+        - labpopupnewsletter
+      displayManufacture:
+        - labmanufacture
+      displaytestimonials:
+        - labtestimonials
+      displayVegamenuMobile:
+        - labvegamenu
+      displayVegamenu:
+        - labvegamenu
+      displayMegamenuMobile:
+        - labmegamenu
+      displayMegamenu:
+        - labmegamenu
+
+  image_types:
+    cart_default:
+      width: 125
+      height: 125
+      scope: [products]
+    small_default:
+      width: 98
+      height: 98
+      scope: [products, categories, manufacturers, suppliers]
+    medium_default:
+      width: 452
+      height: 452
+      scope: [products, manufacturers, suppliers]
+    home_default:
+      width: 250
+      height: 250
+      scope: [products, categories]
+    large_default:
+      width: 600
+      height: 600
+      scope: [products, manufacturers, suppliers]
+    category_default:
+      width: 870
+      height: 275
+      scope: [categories]
+    stores_default:
+      width: 170
+      height: 115
+      scope: [stores]
+
+theme_settings:
+  default_layout: layout-full-width
+  layouts:
+    category: layout-left-column
+    best-sales: layout-left-column
+    new-products: layout-left-column
+    prices-drop: layout-left-column
+    contact: layout-left-column
+dependencies:
+  modules:
+    - blockwishlist
+    - productcomments
+    - labthemeoptions
+    - labpopupnewsletter
+    - labmegamenu
+    - labvegamenu
+    - labslideshow
+    - labproductcategory
+    - labproductfilter
+    - labcustomhtml
+    - labproductnextprev
+    - labcountdown
+    - labtestimonials
+    - labmanufacture
+    - labblocksearch

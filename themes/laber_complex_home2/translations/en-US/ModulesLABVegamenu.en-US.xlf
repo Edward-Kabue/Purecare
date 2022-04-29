@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="E:\labertheme\htdocs\laber_complex_v17\themes\laber_complex_home2\modules\labvegamenu\views\templates\hook\labvegamenu.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="daa4735c1b287021fff89ab49d0c3097">
+        <source>Shop By Department</source>
+        <target>Shop By Department</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_complex_v17\themes\laber_complex_home2\modules\labvegamenu\views\templates\hook\labvegamenu.tpl:31</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labvegamenu\views\templates\hook\labvegamenu.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="d3da97e2d9aee5c8fbe03156ad051c99">
+        <source>More</source>
+        <target>More</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labvegamenu\views\templates\hook\labvegamenu.tpl:134</note>
+      </trans-unit>
+      <trans-unit id="af1b98adf7f686b84cd0b443e022b7a0">
+        <source>Categories</source>
+        <target>Categories</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labvegamenu\views\templates\hook\labvegamenu.tpl:31</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labmegamenu\views\templates\hook\labmegamenu.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="846495f9ceed11accf8879f555936a7d">
+        <source>Navigation</source>
+        <target>Navigation</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labmegamenu\views\templates\hook\labmegamenu.tpl:31</note>
+      </trans-unit>
+      <trans-unit id="d3da97e2d9aee5c8fbe03156ad051c99">
+        <source>More</source>
+        <target>More</target>
+        <note>Context:
+File: E:\labertheme\htdocs\laber_ethan_v17\themes\laber_ethan_home1\modules\labmegamenu\views\templates\hook\labmegamenu.tpl:138</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

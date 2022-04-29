@@ -1,0 +1,25 @@
+<?php return array (
+  'parameters' => 
+  array (
+    'database_host' => '127.0.0.1',
+    'database_port' => '',
+    'database_name' => 'purecare_wide',
+    'database_user' => 'ed',
+    'database_password' => 'c422ia*P',
+    'database_prefix' => 'ps_',
+    'database_engine' => 'InnoDB',
+    'mailer_transport' => 'smtp',
+    'mailer_host' => '127.0.0.1',
+    'mailer_user' => NULL,
+    'mailer_password' => NULL,
+    'secret' => 'sRCo0cbmLNDoeW59DV8XisaEMNYWoSX6t01B4OT1E2DarvQYhaMRSapwzQ2odUU3',
+    'ps_caching' => 'CacheMemcache',
+    'ps_cache_enable' => false,
+    'ps_creation_date' => '2022-04-26',
+    'locale' => 'en-US',
+    'use_debug_toolbar' => true,
+    'cookie_key' => 'sMPiTkX2Wy9Q63kww1isr8aSvdHj7LUyacIbyy1BD9117gOLCkNeNYr4Qp9UnYyC',
+    'cookie_iv' => 'bJzTxHfcgkk0OpAgavCti5rbbztnakt1',
+    'new_cookie_key' => 'def000006385a889351859bf37ee26e018ed9ca67793bbb564a041d4d3a3822cfc698cff74a7585d0d33fac99aa05aaeccf7983ae8653108b1e0d74fad99485b55e24525',
+  ),
+);
