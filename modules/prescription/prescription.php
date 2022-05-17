@@ -242,7 +242,7 @@ class Prescription extends Module
         /* Place your code here. */
      
         $this->context->smarty->assign('module_dir', $this->_path);
-        $style =$this->context->controller->addCSS($this->local_path.'/views/css/front.css');
+        $style =$this->context->controller->addCSS($this->_path.'/views/css/front.css');
         $output = $this->context->smarty->fetch($this->local_path.'views/templates/front/filing.tpl');
 
         return $output;
