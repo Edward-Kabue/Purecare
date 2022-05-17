@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-17 11:21:45
+/* Smarty version 3.1.43, created on 2022-05-17 15:30:41
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_62835b19840ee7_82507653',
+  'unifunc' => 'content_62839571621c24_98647793',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62835b19840ee7_82507653 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62839571621c24_98647793 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin C:\laragon\www\purecare/themes/purecare_rx/modules/ps_customersignin/ps_customersignin.tpl --><div id="_desktop_user_info">
 	<div class="user-info-block selector-block">
 		<div class="currency-selector localiz_block dropdown js-dropdown">

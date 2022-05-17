@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-17 11:22:59
+/* Smarty version 3.1.43, created on 2022-05-17 15:30:41
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_62835b63bb3da2_34786318',
+  'unifunc' => 'content_62839571b15eb7_41786657',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' => 1,
   ),
 ),false)) {
-function content_62835b63bb3da2_34786318 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62839571b15eb7_41786657 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin C:\laragon\www\purecare/themes/purecare_rx/modules/ps_shoppingcart/ps_shoppingcart.tpl --><div id="_desktop_cart_block">
 	<div class="blockcart cart-preview" data-refresh-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['refresh_url']->value, ENT_QUOTES, 'UTF-8');?>
 " data-cartitems="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['products_count'], ENT_QUOTES, 'UTF-8');?>
@@ -64,7 +64,13 @@ $_smarty_tpl->tpl_vars['subtotal']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['subtotal']->value) {
 $_smarty_tpl->tpl_vars['subtotal']->do_else = false;
 ?>
-
+						<div class="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['subtotal']->value['type'], ENT_QUOTES, 'UTF-8');?>
+ price_inline">
+						  <span class="label"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['subtotal']->value['label'], ENT_QUOTES, 'UTF-8');?>
+</span>
+						  <span class="value"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['subtotal']->value['value'], ENT_QUOTES, 'UTF-8');?>
+</span>
+						</div>
 					  <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>

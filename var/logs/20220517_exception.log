@@ -1,0 +1,4 @@
+*ERROR* 	v1.7.8.5	2022/05/17 - 13:28:50: No template found for theme:purecare_rx/templates/upload.tpl at line 68 in file classes/Smarty/TemplateFinder.php
+*ERROR* 	v1.7.8.5	2022/05/17 - 13:29:56: No template found for themes/purecare_rx/templates/upload.tpl at line 68 in file classes/Smarty/TemplateFinder.php
+*ERROR* 	v1.7.8.5	2022/05/17 - 13:32:55: No template found for _THEME_DIR_/purecare_rx/templates/upload.tpl at line 68 in file classes/Smarty/TemplateFinder.php
+*ERROR* 	v1.7.8.5	2022/05/17 - 13:34:17: No template found for _PS_THEME_DIR_/purecare_rx/templates/upload.tpl at line 68 in file classes/Smarty/TemplateFinder.php

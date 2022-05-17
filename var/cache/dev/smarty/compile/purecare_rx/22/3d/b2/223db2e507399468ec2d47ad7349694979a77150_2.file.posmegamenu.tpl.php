@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-17 11:22:59
+/* Smarty version 3.1.43, created on 2022-05-17 15:30:41
   from 'C:\laragon\www\purecare\themes\purecare_rx\modules\posmegamenu\views\templates\hook\posmegamenu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_62835b636ba995_31349064',
+  'unifunc' => 'content_628395717de6e1_35563758',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62835b636ba995_31349064 (Smarty_Internal_Template $_smarty_tpl) {
+function content_628395717de6e1_35563758 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -177,7 +177,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 "><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['sub_menu_item']->value['product']['name'], ENT_QUOTES, 'UTF-8');?>
 </a></h3>
 																	<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5883905062835b6369a068_32190905', 'product_reviews');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_178325314628395717d65f1_96068799', 'product_reviews');
 ?>
  
 																	<?php if ($_smarty_tpl->tpl_vars['sub_menu_item']->value['product']['show_price']) {?>
@@ -252,12 +252,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div>
 </div><?php }
 /* {block 'product_reviews'} */
-class Block_5883905062835b6369a068_32190905 extends Smarty_Internal_Block
+class Block_178325314628395717d65f1_96068799 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_reviews' => 
   array (
-    0 => 'Block_5883905062835b6369a068_32190905',
+    0 => 'Block_178325314628395717d65f1_96068799',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -2654,6 +2654,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
                 80 => 'xipblog',
                 81 => 'xipblogdisplayposts',
                 82 => 'postestimonials',
+                83 => 'prescription',
             ],
             'ps_cache_dir' => 'C:\\laragon\\www\\purecare/var/cache/dev\\',
             'mail_themes_uri' => '/mails/themes',
