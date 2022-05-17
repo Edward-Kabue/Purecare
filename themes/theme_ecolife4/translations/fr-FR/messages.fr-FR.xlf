@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xampp\htdocs\pos_drama\themes\theme_drama3\modules\possearchproducts\views\templates\front\possearch.tpl" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="62f5d708d6ad1fa1ddd9429a65cccbea">
+        <source>All categories</source>
+        <target>All categories</target>
+        <note>Context:
+File: D:\xampp\htdocs\pos_drama\themes\theme_drama3\modules\possearchproducts\views\templates\front\possearch.tpl:35</note>
+      </trans-unit>
+      <trans-unit id="b6b8d7667b88cba3d1e5571b620bd5b0">
+        <source>Enter your search key ... </source>
+        <target>Enter your search key ... </target>
+        <note>Context:
+File: D:\xampp\htdocs\pos_drama\themes\theme_drama3\modules\possearchproducts\views\templates\front\possearch.tpl:42</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xampp\htdocs\pos_drama\themes\theme_drama3\modules\postabcateslider\views\templates\admin\_configure\helpers\form\form.tpl" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="92fbf0e5d97b8afd7e73126b52bdc4bb">
+        <source>Choose a file</source>
+        <target>Choisissez un fichier</target>
+        <note>Context:
+File: D:\xampp\htdocs\pos_drama\themes\theme_drama3\modules\postabcateslider\views\templates\admin\_configure\helpers\form\form.tpl:42</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xampp\htdocs\pos_drama\themes\theme_drama3\modules\postabcateslider\views\templates\hook\categories-tree.tpl" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="99078a8f3786817fbaa593c08ff04a5d">
+        <source>Select categories</source>
+        <target>Select categories</target>
+        <note>Context:
+File: D:\xampp\htdocs\pos_drama\themes\theme_drama3\modules\postabcateslider\views\templates\hook\categories-tree.tpl:5</note>
+      </trans-unit>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target>Save</target>
+        <note>Context:
+File: D:\xampp\htdocs\pos_drama\themes\theme_drama3\modules\postabcateslider\views\templates\hook\categories-tree.tpl:13</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
