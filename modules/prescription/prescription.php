@@ -240,7 +240,7 @@ class Prescription extends Module
     public function hookDisplayCustomerAccountForm()
     {
         /* Place your code here. */
-     
+         $this->bootstrap = true;
         $this->context->smarty->assign('module_dir', $this->_path);
         $style =$this->context->controller->addCSS($this->_path.'/views/css/front.css');
         $output = $this->context->smarty->fetch($this->local_path.'views/templates/front/filing.tpl');

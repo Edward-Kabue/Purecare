@@ -25,33 +25,22 @@
 {extends file='page.tpl'}
 
 {block name='page_header_container'}{/block}
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
 
-<style>
-#msform fieldset {
-    background: white;
-    border: 0 none;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding-bottom: 20px;
-    position: relative
-}
-</style>
 
 
 {block name='page_content'}
  <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
             <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                 <h2 id="heading">Sign Up Your User Account</h2>
                 <p>Fill all form field to go to next step</p>
                 <form id="msform">
                     <!-- progressbar -->
                     <ul id="progressbar">
-                        <li class="active" id="account"><strong>Account</strong></li>
-                        <li id="personal"><strong>Personal</strong></li>
+                        <li class="active" id="account"><strong>Upload</strong></li>
+                        <li id="personal"><strong></strong></li>
                         <li id="payment"><strong>Image</strong></li>
                         <li id="confirm"><strong>Finish</strong></li>
                     </ul>
