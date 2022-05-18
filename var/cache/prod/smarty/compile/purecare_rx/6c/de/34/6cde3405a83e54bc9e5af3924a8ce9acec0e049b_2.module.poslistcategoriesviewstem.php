@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-17 16:25:33
+/* Smarty version 3.1.43, created on 2022-05-18 12:19:05
   from 'module:poslistcategoriesviewstem' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_6283a24d39e216_64260694',
+  'unifunc' => 'content_6284ba09cc43f7_74625820',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6283a24d39e216_64260694 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6284ba09cc43f7_74625820 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="poslistcategories">
 	<div class="pos_title">

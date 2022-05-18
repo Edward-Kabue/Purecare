@@ -23,14 +23,10 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="_desktop_user_info">
-	<div class="user-info-block selector-block">
-		<div class="currency-selector localiz_block dropdown js-dropdown">
-			<button data-target="#" data-toggle="dropdown" class=" btn-unstyle hidden-md-down">
-			  <span class="expand-more">{l s='Setting' d='Shop.Theme.Customeraccount'}</span>
-			  <i class="material-icons">expand_more</i>
-			</button>
-			<button data-target="#" data-toggle="dropdown" class=" btn-unstyle hidden-lg-up">
-				<i class="ion-ios-contact"></i>
+	<div class="user-info-block">
+		<div class=" dropdown js-dropdown"> 
+			<button data-target="#" data-toggle="dropdown" class=" btn-unstyle">
+				<i class="pe-7s-user"></i>
 			</button>
 			<ul class="dropdown-menu">
 			<li>

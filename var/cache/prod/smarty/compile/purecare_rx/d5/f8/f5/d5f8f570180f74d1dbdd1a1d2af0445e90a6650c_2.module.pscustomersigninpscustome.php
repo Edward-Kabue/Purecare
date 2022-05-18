@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-17 16:25:27
+/* Smarty version 3.1.43, created on 2022-05-18 12:18:42
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_6283a247a24e49_04107409',
+  'unifunc' => 'content_6284b9f2677bb1_42873505',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5f8f570180f74d1dbdd1a1d2af0445e90a6650c' => 
     array (
       0 => 'module:pscustomersigninpscustome',
-      1 => 1580523042,
+      1 => 1652864547,
       2 => 'module',
     ),
   ),
@@ -20,17 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6283a247a24e49_04107409 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6284b9f2677bb1_42873505 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="_desktop_user_info">
-	<div class="user-info-block selector-block">
-		<div class="currency-selector localiz_block dropdown js-dropdown">
-			<button data-target="#" data-toggle="dropdown" class=" btn-unstyle hidden-md-down">
-			  <span class="expand-more"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Setting','d'=>'Shop.Theme.Customeraccount'),$_smarty_tpl ) );?>
-</span>
-			  <i class="material-icons">expand_more</i>
-			</button>
-			<button data-target="#" data-toggle="dropdown" class=" btn-unstyle hidden-lg-up">
-				<i class="ion-ios-contact"></i>
+	<div class="user-info-block">
+		<div class=" dropdown js-dropdown"> 
+			<button data-target="#" data-toggle="dropdown" class=" btn-unstyle">
+				<i class="pe-7s-user"></i>
 			</button>
 			<ul class="dropdown-menu">
 			<li>
