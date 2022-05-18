@@ -22,6 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+<ul>
 {foreach from=$my_account_urls item=my_account_url}
 	<li>
 	  <a href="{$my_account_url.url}" title="{$my_account_url.title}" rel="nofollow">
@@ -30,4 +31,4 @@
 	</li>
 {/foreach}
 {hook h='displayMyAccountBlock'}
-
+</ul> 

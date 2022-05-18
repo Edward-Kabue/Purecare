@@ -6763,7 +6763,7 @@ $(document).ready(function(){
 				items:4,
 			},
 			1200:{
-				items:6, 
+				items:4, 
 			}
 		}
 	});
@@ -6810,7 +6810,7 @@ $(document).ready(function(){
 				items:4,
 			},
 			1200:{
-				items:6,
+				items:4,
 			}
 		}
 		
@@ -6902,21 +6902,18 @@ function display(view)
 				html += '<article class="js-product-miniature style_product_default" data-id-product="'+ id_product +'" data-id-product-attribute="'+ id_product_attr +'" itemscope itemtype="http://schema.org/Product">';
 				html += '<div class="img_block">' + $(element).find('.img_block').html() + '</div>';
 				html += '<div class="product_desc">';
-					html += '<div class="inner_desc">';
-						html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';			
-						html += '<h3>'+ $(element).find('h3').html() + '</h3>';	
-						var hookReviews = $(element).find('.hook-reviews');
-						if (hookReviews.length) {
-							html += hookReviews.clone().wrap('<div>').parent().html();
-						}	
-						var price = $(element).find('.product-price-and-shipping').html();       // check : catalog mode is enabled
-						if (price != null) {
-							html += '<div class="product-price-and-shipping">'+ price + '</div>';
-						}
-						html += '<ul class="add-to-links">'+ $(element).find('.add-to-links').html() + '</ul>';
-					html += '</div>';
-					html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';
+					html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';
+					html += '<h3>'+ $(element).find('h3').html() + '</h3>';							
+					var hookReviews = $(element).find('.hook-reviews');
+					if (hookReviews.length) {
+						html += hookReviews.clone().wrap('<div>').parent().html();
+					}
+					var price = $(element).find('.product-price-and-shipping').html();       // check : catalog mode is enabled
+					if (price != null) {
+						html += '<div class="product-price-and-shipping">'+ price + '</div>';
+					}	
 					html += '<div itemprop="description" class="product-desc">'+ $(element).find('.product-desc').html() + '</div>';
+					html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';
 					html += '<div class="variant-links">'+ $(element).find('.variant-links').html() + '</div>';
 													
 				html += '</div>';
@@ -6925,22 +6922,20 @@ function display(view)
 				html += '<article class="js-product-miniature style_product1" data-id-product="'+ id_product +'" data-id-product-attribute="'+ id_product_attr +'" itemscope itemtype="http://schema.org/Product">';
 				html += '<div class="img_block">' + $(element).find('.img_block').html() + '</div>';
 				html += '<div class="product_desc">';
-					html += '<div class="inner_desc">';			
-						html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';
-						html += '<h3>'+ $(element).find('h3').html() + '</h3>';
-						var hookReviews = $(element).find('.hook-reviews');
-						if (hookReviews.length) {
-							html += hookReviews.clone().wrap('<div>').parent().html();
-						}	
-						var price = $(element).find('.product-price-and-shipping').html();       // check : catalog mode is enabled
-						if (price != null) {
-							html += '<div class="product-price-and-shipping">'+ price + '</div>';
-						}	
-						html += '<div class="cart">'+ $(element).find('.cart').html() + '</div>';
-					html += '</div>';
-					html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';
-					html += '<div itemprop="description" class="product-desc">'+ $(element).find('.product-desc').html() + '</div>';				
-					html += '<div class="variant-links">'+ $(element).find('.variant-links').html() + '</div>';
+				html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';
+				html += '<h3>'+ $(element).find('h3').html() + '</h3>';		
+				var hookReviews = $(element).find('.hook-reviews');
+				if (hookReviews.length) {
+					html += hookReviews.clone().wrap('<div>').parent().html();
+				}
+				var price = $(element).find('.product-price-and-shipping').html();       // check : catalog mode is enabled
+				if (price != null) {
+					html += '<div class="product-price-and-shipping">'+ price + '</div>';
+				}	
+				html += '<div class="cart">'+ $(element).find('.cart').html() + '</div>';
+				html += '<div itemprop="description" class="product-desc">'+ $(element).find('.product-desc').html() + '</div>';
+				html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';
+				html += '<div class="variant-links">'+ $(element).find('.variant-links').html() + '</div>';
 				html += '</div>';
 				html += '</article>';
 			}else if (cate_type == 2) {
@@ -6948,17 +6943,17 @@ function display(view)
 				html += '<div class="img_block">' + $(element).find('.img_block').html() + '</div>';
 				html += '<div class="product_desc">';
 				html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';	
-				html += '<h3>'+ $(element).find('h3').html() + '</h3>';
+				html += '<h3>'+ $(element).find('h3').html() + '</h3>';	
 				var hookReviews = $(element).find('.hook-reviews'); 
 				if (hookReviews.length) {
 					html += hookReviews.clone().wrap('<div>').parent().html();
-				}	
+				}
 				var price = $(element).find('.product-price-and-shipping').html();       // check : catalog mode is enabled
 				if (price != null) {
 					html += '<div class="product-price-and-shipping">'+ price + '</div>';
 				}	
-				html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';
 				html += '<div itemprop="description" class="product-desc">'+ $(element).find('.product-desc').html() + '</div>';
+				html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';
 				html += '<div class="variant-links">'+ $(element).find('.variant-links').html() + '</div>';
 				html += '</div>';
 				html += '</article>';
@@ -6966,19 +6961,18 @@ function display(view)
 				html += '<article class="js-product-miniature style_product3" data-id-product="'+ id_product +'" data-id-product-attribute="'+ id_product_attr +'" itemscope itemtype="http://schema.org/Product">';
 				html += '<div class="img_block">' + $(element).find('.img_block').html() + '</div>';
 				html += '<div class="product_desc">';
- 
-				html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';
+				html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';	
 				html += '<h3>'+ $(element).find('h3').html() + '</h3>';	
 				var hookReviews = $(element).find('.hook-reviews'); 
 				if (hookReviews.length) {
 					html += hookReviews.clone().wrap('<div>').parent().html();
-				}	
+				}
 				var price = $(element).find('.product-price-and-shipping').html();       // check : catalog mode is enabled
 				if (price != null) {
 					html += '<div class="product-price-and-shipping">'+ price + '</div>';
-				}
-				html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';
+				}	
 				html += '<div itemprop="description" class="product-desc">'+ $(element).find('.product-desc').html() + '</div>';
+				html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';
 				html += '<div class="variant-links">'+ $(element).find('.variant-links').html() + '</div>';
 				html += '</div>';
 				html += '</article>';
@@ -7006,29 +7000,32 @@ function display(view)
 			var id_product_attr = $(this).children('article.js-product-miniature').attr('data-id-product-attribute');
 			if (cate_type == 0){
 				html = '<article class="js-product-miniature style_product_default" data-id-product="'+ id_product +'" data-id-product-attribute="'+ id_product_attr +'" itemscope itemtype="http://schema.org/Product"><div class="row">';
-				html += '<div class="img_block col-xs-4 col-sm-4 col-md-4 col-lg-4">' + $(element).find('.img_block').html() + '</div>';
-				html += '<div class="product_desc col-xs-8 col-sm-8 col-md-8 col-lg-8">';
-				html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';	
-			
+				html += '<div class="img_block col-xs-4 col-sm-4 col-md-4 col-lg-3">' + $(element).find('.img_block').html() + '</div>';
+				html += '<div class="product_desc col-xs-8 col-sm-8 col-md-8 col-lg-9">';
+				html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';				
 				html += '<h3>'+ $(element).find('h3').html() + '</h3>';
 				var hookReviews = $(element).find('.hook-reviews');
 				if (hookReviews.length) {
 					html += hookReviews.clone().wrap('<div>').parent().html();
-				}					
+				}
 				var price = $(element).find('.product-price-and-shipping').html();       // check : catalog mode is enabled
 				if (price != null) {
 					html += '<div class="product-price-and-shipping">'+ price + '</div>';
-				}				
-				html += '<div itemprop="description" class="product-desc">'+ $(element).find('.product-desc').html() + '</div>';		
-				html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';	
-				html += '<ul class="add-to-links">'+ $(element).find('.add-to-links').html() + '</ul>';		
-				html += '<div class="variant-links">'+ $(element).find('.variant-links').html() + '</div>'; 
+				}
+				html += '<div itemprop="description" class="product-desc">'+ $(element).find('.product-desc').html() + '</div>';
+			
+				html += '<div class="box-inner">';	
+					html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';				
+					html += '<div class="cart">'+ $(element).find('.cart').html() + '</div>';
+					html += '<ul class="add-to-links">'+ $(element).find('.add-to-links').html() + '</ul>';	
+				html += '</div>';
+				html += '<div class="variant-links">'+ $(element).find('.variant-links').html() + '</div>';
 				html += '</div></article>';
 			}else if(cate_type == 1){
 				html = '<article class="js-product-miniature style_product1" data-id-product="'+ id_product +'" data-id-product-attribute="'+ id_product_attr +'" itemscope itemtype="http://schema.org/Product"><div class="row">';
-				html += '<div class="img_block col-xs-4 col-sm-4 col-md-4 col-lg-4">' + $(element).find('.img_block').html() + '</div>';
-				html += '<div class="product_desc col-xs-8 col-sm-8 col-md-8 col-lg-8">';
-				html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';	
+				html += '<div class="img_block col-xs-4 col-sm-4 col-md-4 col-lg-3">' + $(element).find('.img_block').html() + '</div>';
+				html += '<div class="product_desc col-xs-8 col-sm-8 col-md-8 col-lg-9">';
+				html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';				
 				html += '<h3>'+ $(element).find('h3').html() + '</h3>';
 				var hookReviews = $(element).find('.hook-reviews');
 				if (hookReviews.length) {
@@ -7038,17 +7035,20 @@ function display(view)
 				if (price != null) {
 					html += '<div class="product-price-and-shipping">'+ price + '</div>';
 				}
-							
 				html += '<div itemprop="description" class="product-desc">'+ $(element).find('.product-desc').html() + '</div>';
-				html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';				
-				html += '<div class="cart">'+ $(element).find('.cart').html() + '</div>';
+			
+				html += '<div class="box-inner">';	
+					html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';				
+					html += '<div class="cart">'+ $(element).find('.cart').html() + '</div>';
+					html += '<ul class="add-to-links">'+ $(element).find('.add-to-links').html() + '</ul>';	
+				html += '</div>';
 				html += '<div class="variant-links">'+ $(element).find('.variant-links').html() + '</div>';
 				html += '</div></article>';
 			}else if(cate_type == 2){
 				html = '<article class="js-product-miniature style_product2" data-id-product="'+ id_product +'" data-id-product-attribute="'+ id_product_attr +'" itemscope itemtype="http://schema.org/Product"><div class="row">';
-				html += '<div class="img_block col-xs-4 col-sm-4 col-md-4 col-lg-4">' + $(element).find('.img_block').html() + '</div>';
-				html += '<div class="product_desc col-xs-8 col-sm-8 col-md-8 col-lg-8">';
-				html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';
+				html += '<div class="img_block col-xs-4 col-sm-4 col-md-4 col-lg-3">' + $(element).find('.img_block').html() + '</div>';
+				html += '<div class="product_desc col-xs-8 col-sm-8 col-md-8 col-lg-9">';	
+				html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';	
 				html += '<h3>'+ $(element).find('h3').html() + '</h3>';
 				var hookReviews = $(element).find('.hook-reviews');
 				if (hookReviews.length) {
@@ -7058,15 +7058,19 @@ function display(view)
 				if (price != null) {
 					html += '<div class="product-price-and-shipping">'+ price + '</div>';
 				}
-				
-				html += '<div itemprop="description" class="product-desc">'+ $(element).find('.product-desc').html() + '</div>';		
-				html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';
+				html += '<div itemprop="description" class="product-desc">'+ $(element).find('.product-desc').html() + '</div>';
+			
+				html += '<div class="box-inner">';	
+					html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';
+					html += '<div class="cart">'+ $(element).find('.cart').html() + '</div>';
+					html += '<ul class="add-to-links">'+ $(element).find('.add-to-links').html() + '</ul>';	
+				html += '</div>';
 				html += '<div class="variant-links">'+ $(element).find('.variant-links').html() + '</div>';
 				html += '</div></article>';
 			}else if(cate_type == 3){
 				html = '<article class="js-product-miniature style_product3" data-id-product="'+ id_product +'" data-id-product-attribute="'+ id_product_attr +'" itemscope itemtype="http://schema.org/Product"><div class="row">';
-				html += '<div class="img_block col-xs-4 col-sm-4 col-md-4 col-lg-4">' + $(element).find('.img_block').html() + '</div>';
-				html += '<div class="product_desc col-xs-8 col-sm-8 col-md-8 col-lg-8">';
+				html += '<div class="img_block col-xs-4 col-sm-4 col-md-4 col-lg-3">' + $(element).find('.img_block').html() + '</div>';
+				html += '<div class="product_desc col-xs-8 col-sm-8 col-md-8 col-lg-9">';	
 				html += '<div class="manufacturer">'+ $(element).find('.manufacturer').html() + '</div>';	
 				html += '<h3>'+ $(element).find('h3').html() + '</h3>';
 				var hookReviews = $(element).find('.hook-reviews');
@@ -7078,7 +7082,12 @@ function display(view)
 					html += '<div class="product-price-and-shipping">'+ price + '</div>';
 				}
 				html += '<div itemprop="description" class="product-desc">'+ $(element).find('.product-desc').html() + '</div>';			
-				html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';				
+				html += '<div class="box-inner">';	
+					html += '<div class="availability">'+ $(element).find('.availability').html() + '</div>';
+					
+					html += '<div class="cart">'+ $(element).find('.cart').html() + '</div>';
+					html += '<ul class="add-to-links">'+ $(element).find('.add-to-links').html() + '</ul>';	
+				html += '</div>';
 				html += '<div class="variant-links">'+ $(element).find('.variant-links').html() + '</div>';
 				html += '</div></article>';
 			}
@@ -7100,20 +7109,4 @@ function display(view)
 		});
 	});
 })(jQuery); 
-$(document).ready(function(){
-	$('.pos_content,.product_content.grid').each(function(){
-		var maxHeight = 0;
-		$(this).find('.js-product-miniature').each(function(){
-			if ($(this).outerHeight() > maxHeight) { 
-			  maxHeight = parseFloat($(this).outerHeight()) > maxHeight ? parseFloat($(this).outerHeight()) : maxHeight; 
-			};
-		});
-		 $(this).find('.js-product-miniature').css('min-height', maxHeight);
-		 
-	});
-	
-	
-			
-});  
-
-
+ 

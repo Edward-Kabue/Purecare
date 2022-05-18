@@ -22,16 +22,19 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<!-- Block search module TOP -->
-<div id="_desktop_search_block" class="col-md-12 col-sm-12 col-xs-12">
-	<div id="search_widget" class="search_top" data-search-controller-url="{$search_controller_url}">
+<!-- Block search module TOP --> 
+<div id="_desktop_search_block">
+<div class="block-search  dropdown js-dropdown">
+	<span class="search-icon" data-toggle="dropdown"><i class="pe-7s-search"></i></span> 
+	<div id="search_widget" class="search_top dropdown-menu" data-search-controller-url="{$search_controller_url}">
 		<form method="get" action="{$search_controller_url}">
 			<input type="hidden" name="controller" value="search">
-			<input class="text_input" type="text" name="s" value="{$search_string}" placeholder="{l s='Search our catalog' d='Shop.Theme.Catalog'}" aria-label="{l s='Search' d='Shop.Theme.Catalog'}">
+			<input class="text_input" type="text" name="s" value="{$search_string}" placeholder="{l s='Search products...' d='Shop.Theme.Catalog'}" aria-label="{l s='Search' d='Shop.Theme.Catalog'}">
 			<button type="submit">
-				<i class="icon-search"></i>
+				<i class="pe-7s-search"></i> 
 			</button>
 		</form>
 	</div>
+</div>
 </div>
 <!-- /Block search module TOP -->

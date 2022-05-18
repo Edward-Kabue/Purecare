@@ -3,6 +3,8 @@ $main_border: 1px solid #ebebeb;
 @import 'animate';
 @import 'fontawesome-all';
 @import 'ionicons';
+@import 'linearicons';
+@import 'pe-icon-7-stroke';
 @import 'plaza-icon';
 @mixin pos-transition($number) {
   -webkit-transition: all $number linear;

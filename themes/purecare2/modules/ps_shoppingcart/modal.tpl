@@ -42,9 +42,16 @@
                 <h6 class="h6 product-name">{$product.name}</h6>
                 <p>{$product.price}</p>
                 {hook h='displayProductPriceBlock' product=$product type="unit_price"}
-                {foreach from=$product.attributes item="property_value" key="property"}
-                  <span><strong>{$property}</strong>: {$property_value}</span><br>
-                {/foreach}
+
+                {* AWP - change *}
+                {if isset($product.instructions) && $product.instructions}
+                  {$product.instructions|escape:'htmlspecialchars':'UTF-8' nofilter}
+                {else}
+                  {foreach from=$product.attributes item="property_value" key="property"}
+                    <span><strong>{$property}</strong>: {$property_value}</span><br>
+                  {/foreach}
+                {/if}
+                {* END - AWP - change *}
                 <p><strong>{l s='Quantity:' d='Shop.Theme.Checkout'}</strong>&nbsp;{$product.cart_quantity}</p>
               </div>
             </div>
