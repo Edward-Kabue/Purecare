@@ -16421,6 +16421,10 @@ main {
   overflow: hidden;
 }
 
+#header .header-tip .container> .row {
+  display: flex;
+  align-items: center;
+}
 #header .header-top {
   position: relative;
   padding: 17px 0;
@@ -16449,15 +16453,15 @@ main {
 #header .header-top.scroll-menu:hover {
   background: #253237;
 }
-#header .header-top .container-fluid > .row {
+#header .header-top .container> .row {
   display: flex;
   align-items: center;
 }
-#header .header-top .container-fluid > .row #_desktop_logo {
+#header .header-top .container> .row #_desktop_logo {
   max-width: 165px;
   margin-right: 30px;
 }
-#header .header-top .container-fluid > .row .position-static {
+#header .header-top .container> .row .position-static {
   flex-grow: 1;
 }
 #header .header-bottom {
@@ -17635,7 +17639,7 @@ main {
   text-align: center;
   line-height: 26px;
   padding: 10px 0;
-  color: #ffffff;
+  color: #000;
 }
 .blockcart .button_cart a.desktop:before,
 .blockcart .button_cart a.mobile:before {

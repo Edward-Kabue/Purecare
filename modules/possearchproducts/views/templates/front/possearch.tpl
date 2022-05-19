@@ -25,8 +25,8 @@
 
 <!-- pos search module TOP -->
 <div id="_desktop_search_category"> 
-	<div class="dropdown js-dropdown">
-		<span class="search-icon" data-toggle="dropdown"><i class="ion-ios-search-strong"></i></span> 
+	<div class="dropdown js-dropdown open">
+		
 		<div id="pos_search_top" class="dropdown-menu">
 			<form method="get" action="{$search_controller_url}" id="searchbox" class="form-inline form_search {if $cate_on == 1}show-categories{/if}"  data-search-controller-url="{$url_search|escape:'html'}">
 				<label for="pos_query_top"><!-- image on background --></label>

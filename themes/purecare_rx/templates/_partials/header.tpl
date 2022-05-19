@@ -30,57 +30,52 @@
 
 {block name='header_nav'}
 <nav class="header-nav">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="hidden-md-down">
 			{hook h='displayNav'}
 		</div>
-	</div>
-	<div class="container">
 		<div class="hidden-lg-up  mobile">
-			<div id="_mobile_static"></div>
 			<div class="row row-mobile">
-				<div class="col-mobile col-md-4 col-xs-4">
-					<div class="float-xs-left" id="menu-icon">
-						<i class="ion-android-menu"></i>
-					</div>
-					<div id="mobile_top_menu_wrapper" class="row hidden-lg-up" style="display:none;">
-						<div class="top-header-mobile">							
-							<div id="_mobile_compare"></div>
-							<div id="_mobile_wishtlist"></div>
-						</div>
-						<div id="_mobile_currency_selector"></div>
-						<div id="_mobile_language_selector"></div>				
-						<div class="menu-close"> 
-							{l s='menu' d='Shop.Theme.Global'} <i class="material-icons float-xs-right">arrow_back</i>
-						</div>
-						<div class="menu-tabs">							
-							<div class="js-top-menu-bottom">												
-								<div id="_mobile_megamenu"></div>
-								
-							</div>
-							
-						</div>
-					 </div>
-				</div>
-				<div class="col-mobile col-md-4 col-xs-4 mobile-center">
+				<div class="col-mobile mobile-top col-md-12 col-xs-12">
 					<div class="top-logo" id="_mobile_logo"></div>
 				</div>
-				<div class="col-mobile col-md-4 col-xs-4 mobile-right">
-					<div id="_mobile_cart_block"></div>
+				<div class="col-mobile mobile-bottom col-md-12 col-xs-12">
+
+					<div class="float-xs-left" id="menu-icon">
+						<i class="pe-7s-menu"></i>
+					</div>
+					<div id="mobile_top_menu_wrapper" class="row hidden-lg-up" style="display:none;">
+						<div class="top-header-mobile">
+							<div id="_mobile_static"></div>
+						</div>
+						<div id="_mobile_currency_selector"></div>
+						<div id="_mobile_language_selector"></div>
+						<div class="menu-close">
+							{l s='menu' d='Shop.Theme.Global'} <i class="material-icons float-xs-right">arrow_back</i>
+						</div>
+						<div class="menu-tabs">
+							<div class="js-top-menu-bottom">
+								<div id="_mobile_megamenu"></div>
+							</div>
+
+						</div>
+					</div>
+
 					<div id="_mobile_user_info"></div>
+					<div id="_mobile_cart_block"></div>
 				</div>
 			</div>
-			<div id="_mobile_search_category"></div>
+			<div id="_mobile_search_block"></div>
 		</div>
 	</div>
 </nav>
 {/block}
 
 {block name='header_top'}
-<div class="header-top top_bg hidden-md-down">
-	<div class="container-fluid">
+<div class="header-tip hidden-md-down">
+	<div class="container">
 		<div class="row">
-			<div class="col col col-md-2" id="_desktop_logo">
+			<div class="col col-left col col-md-2" id="_desktop_logo">
 				{if $page.page_name == 'index'}
 				<a href="{$urls.base_url}">
 				<img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
@@ -91,11 +86,24 @@
 				</a>
 				{/if}
 			</div>
-			<div class=" col col-md-10 col-sm-12 position-static">
-				{hook h='displaymegamenu'}
+			<div class="  col col-right col-md-10 col-sm-12 position-static">
+			
 				{hook h='displayTop'}
 			</div>
+
+		</div>
+	</div>
+
+</div>
+<div class="header-top hidden-md-down">
+	<div class="container">
+		<div class="row">
+		
+			<div class=" col col-lg-9 col-sm-12 position-static">
+				{hook h='displaymegamenu'}
 			
+			</div>
+
 		</div>
 	</div>
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-19 15:48:53
+/* Smarty version 3.1.43, created on 2022-05-19 17:30:34
   from 'module:possearchproductsviewstem' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_62863cb5e81936_26542753',
+  'unifunc' => 'content_6286548acc4cc0_05246188',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9d6ed9a65d832439eb2d2c1033bbc69dd9aac0c' => 
     array (
       0 => 'module:possearchproductsviewstem',
-      1 => 1582687923,
+      1 => 1652965397,
       2 => 'module',
     ),
   ),
@@ -21,12 +21,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/possearchproducts/views/templates/front/category-tree-branch.tpl' => 1,
   ),
 ),false)) {
-function content_62863cb5e81936_26542753 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6286548acc4cc0_05246188 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- pos search module TOP -->
 <div id="_desktop_search_category"> 
-	<div class="dropdown js-dropdown">
-		<span class="search-icon" data-toggle="dropdown"><i class="ion-ios-search-strong"></i></span> 
+	<div class="dropdown js-dropdown open">
+		
 		<div id="pos_search_top" class="dropdown-menu">
 			<form method="get" action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['search_controller_url']->value, ENT_QUOTES, 'UTF-8');?>
 " id="searchbox" class="form-inline form_search <?php if ($_smarty_tpl->tpl_vars['cate_on']->value == 1) {?>show-categories<?php }?>"  data-search-controller-url="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['url_search']->value,'html' )), ENT_QUOTES, 'UTF-8');?>

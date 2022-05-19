@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-19 15:48:52
+/* Smarty version 3.1.43, created on 2022-05-19 17:30:38
   from 'C:\laragon\www\purecare\modules\posrotatorimg\rotator_header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_62863cb4d3f8a0_78532961',
+  'unifunc' => 'content_6286548ed53230_73492934',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62863cb4d3f8a0_78532961 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6286548ed53230_73492934 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <style type="text/css">
 .<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['class_name']->value, ENT_QUOTES, 'UTF-8');?>

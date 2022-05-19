@@ -847,23 +847,23 @@ class Posmegamenu extends Module
 					$title = $sup->name;
 				}
 				break;
-			// case 'PAG':
-			// 	$pag = Meta::getMetaByPage($key, $id_lang);
-			// 	$link = $this->context->link->getPageLink($pag['page'], true, $id_lang);
-			// 	if ($page_name == $pag['page']) $selected_item = true;
-			// 	if(!isset($submenu_selection) && $item['title']){
-			// 		$title = $item['title'];
-			// 	}else{
-			// 		if ($pag['page'] == 'index')
-			// 			$title = $this->l('Home');
-			// 		elseif($pag['page'] == 'homepage'){
-			// 			$title = $this->l('Home');
-			// 			$link = $this->context->link->getPageLink('index', true, $id_lang);
-			// 		}else{
-			// 			$title = $pag['title'];
-			// 		}
-			// 	}
-			// 	break;
+			case 'PAG':
+			 	$pag = Meta::getMetaByPage($key, $id_lang);
+			 	$link = $this->context->link->getPageLink($pag['page'], true, $id_lang);
+			 	if ($page_name == $pag['page']) $selected_item = true;
+			 	if(!isset($submenu_selection) && $item['title']){
+					$title = $item['title'];
+				}else{
+					if ($pag['page'] == 'index')
+					$title = $this->l('Home');
+			 		elseif($pag['page'] == 'homepage'){
+			 			$title = $this->l('Home');
+			 			$link = $this->context->link->getPageLink('index', true, $id_lang);
+			 		}else{
+			 			$title = $pag['title'];
+					}
+			 	}
+			 	break;
 			case 'SHO':
 				$shop = new Shop((int)$key);
 				$link = $shop->getBaseURL();
