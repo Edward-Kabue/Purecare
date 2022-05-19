@@ -22,10 +22,11 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 {extends file='page.tpl'}
 
 {block name='page_header_container'}{/block}
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
 
 
 
@@ -39,7 +40,9 @@
                 <form id="msform">
                     <!-- progressbar -->
                     <ul id="progressbar">
-                        <li class="active" id="account"><strong>Upload</strong></li>
+                        <li class="active" id="account">
+                      
+                                               <strong>Upload</strong></li>
                         <li id="personal"><strong></strong></li>
                         <li id="payment"><strong>Image</strong></li>
                         <li id="confirm"><strong>Finish</strong></li>

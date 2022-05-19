@@ -29,7 +29,8 @@
        
 
         {block name='page_content'}
-         <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/Header.jpg" alt="about us"/>
+        <div class='page_content'></div>
+         <img src="/img/cms/aboutus.jpg" alt="about us"/>
          <section class="courses">
          <div class="courses__container container">
             <div class="courses__heading">

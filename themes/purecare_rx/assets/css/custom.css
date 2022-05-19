@@ -22429,6 +22429,10 @@ main {
 }
 
 /* Courses section */
+page_content {
+  margin-top: 120px;
+}
+
 .courses {
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 }

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-18 15:12:38
+/* Smarty version 3.1.43, created on 2022-05-19 14:57:26
   from 'module:possearchproductsviewstem' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_6284e2b677c582_15272002',
+  'unifunc' => 'content_628630a6106b25_12514707',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/possearchproducts/views/templates/front/category-tree-branch.tpl' => 1,
   ),
 ),false)) {
-function content_6284e2b677c582_15272002 (Smarty_Internal_Template $_smarty_tpl) {
+function content_628630a6106b25_12514707 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- pos search module TOP -->
 <div id="_desktop_search_category"> 
