@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-19 14:57:26
+/* Smarty version 3.1.43, created on 2022-05-19 15:48:54
   from 'C:\laragon\www\purecare\themes\purecare_rx\templates\_partials\breadcrumb.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_628630a6413f19_92617355',
+  'unifunc' => 'content_62863cb62f75a0_15380601',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_628630a6413f19_92617355 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62863cb62f75a0_15380601 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -37,7 +37,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 " class="breadcrumb">
 		  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
 			<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1659572809628630a640e038_18344122', 'breadcrumb');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_137276464862863cb62f0af8_02991011', 'breadcrumb');
 ?>
 
 		  </ol>
@@ -47,7 +47,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1659572809628630a6
 
 <?php }
 /* {block 'breadcrumb_item'} */
-class Block_1953196455628630a640eb63_07714344 extends Smarty_Internal_Block
+class Block_178994895262863cb62f1a18_98791284 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -66,16 +66,16 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'breadcrumb_item'} */
 /* {block 'breadcrumb'} */
-class Block_1659572809628630a640e038_18344122 extends Smarty_Internal_Block
+class Block_137276464862863cb62f0af8_02991011 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'breadcrumb' => 
   array (
-    0 => 'Block_1659572809628630a640e038_18344122',
+    0 => 'Block_137276464862863cb62f0af8_02991011',
   ),
   'breadcrumb_item' => 
   array (
-    0 => 'Block_1953196455628630a640eb63_07714344',
+    0 => 'Block_178994895262863cb62f1a18_98791284',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -91,7 +91,7 @@ $_smarty_tpl->tpl_vars['path']->do_else = false;
 $_smarty_tpl->tpl_vars['__smarty_foreach_breadcrumb']->value['iteration']++;
 ?>
 				<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1953196455628630a640eb63_07714344', 'breadcrumb_item', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_178994895262863cb62f1a18_98791284', 'breadcrumb_item', $this->tplIndex);
 ?>
 
 			  <?php

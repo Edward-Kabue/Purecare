@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-19 14:57:26
+/* Smarty version 3.1.43, created on 2022-05-19 15:48:53
   from 'C:\laragon\www\purecare\modules\possearchproducts\views\templates\front\category-tree-branch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_628630a6185672_25431950',
+  'unifunc' => 'content_62863cb5f14092_10848986',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/possearchproducts/views/templates/front/category-tree-branch.tpl' => 2,
   ),
 ),false)) {
-function content_628630a6185672_25431950 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62863cb5f14092_10848986 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <option value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['node']->value['id'], ENT_QUOTES, 'UTF-8');?>
 ">

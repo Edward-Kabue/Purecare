@@ -41,11 +41,9 @@
                     <!-- progressbar -->
                     <ul id="progressbar">
                         <li class="active" id="account">
-                      
-                                               <strong>Upload</strong></li>
-                        <li id="personal"><strong></strong></li>
-                        <li id="payment"><strong>Image</strong></li>
-                        <li id="confirm"><strong>Finish</strong></li>
+                        <strong>Submit Prescription</strong></li>
+                        <li id="personal"><strong>Approval & Checkout</strong></li>
+                        <li id="payment"><strong>Payment & Delivery</strong></li>
                     </ul>
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -59,7 +57,12 @@
                                 <div class="col-5">
                                     <h2 class="steps">Step 1 - 4</h2>
                                 </div>
-                            </div> <label class="fieldlabels">Email: *</label> <input type="email" name="email" placeholder="Email Id" /> <label class="fieldlabels">Username: *</label> <input type="text" name="uname" placeholder="UserName" /> <label class="fieldlabels">Password: *</label> <input type="password" name="pwd" placeholder="Password" /> <label class="fieldlabels">Confirm Password: *</label> <input type="password" name="cpwd" placeholder="Confirm Password" />
+                            </div> 
+                              <div class="form-group">
+                        <div class="requiredGroup col-sm-5 col-sm-offset-3">
+                            <input name="fileUpload" id="fileUpload" type="file" class="form-control uploadFile" />
+                            <span class="fileUploadOverlay"></span>
+                        </div>
                         </div> <input type="button" name="next" class="next action-button" value="Next" />
                     </fieldset>
                     <fieldset>
