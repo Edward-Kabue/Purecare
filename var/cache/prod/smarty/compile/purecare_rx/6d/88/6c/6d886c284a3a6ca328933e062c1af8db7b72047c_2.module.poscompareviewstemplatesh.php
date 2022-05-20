@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-19 17:30:35
+/* Smarty version 3.1.43, created on 2022-05-20 12:50:50
   from 'module:poscompareviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_6286548bb02042_17866497',
+  'unifunc' => 'content_6287647a431748_31345046',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6286548bb02042_17866497 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6287647a431748_31345046 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="poscompare-notification" class="">
     <div class="notification-inner">
         <span class="notification-title"><i class="fa fa-check" aria-hidden="true"></i>  <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Product added to compare.','mod'=>'poscompare'),$_smarty_tpl ) );?>

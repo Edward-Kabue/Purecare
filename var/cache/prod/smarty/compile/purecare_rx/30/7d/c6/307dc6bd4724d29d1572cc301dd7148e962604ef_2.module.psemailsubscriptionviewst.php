@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-19 17:30:35
+/* Smarty version 3.1.43, created on 2022-05-20 12:50:50
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_6286548b770b00_39527701',
+  'unifunc' => 'content_6287647a166732_89829307',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6286548b770b00_39527701 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6287647a166732_89829307 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="ft_newsletter col-footer"> 
 	<p><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['conditions']->value, ENT_QUOTES, 'UTF-8');?>

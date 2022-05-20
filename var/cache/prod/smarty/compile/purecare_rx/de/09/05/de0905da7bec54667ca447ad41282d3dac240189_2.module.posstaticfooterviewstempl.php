@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-19 17:30:35
+/* Smarty version 3.1.43, created on 2022-05-20 12:50:50
   from 'module:posstaticfooterviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_6286548b935973_03293742',
+  'unifunc' => 'content_6287647a326319_14413181',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6286548b935973_03293742 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6287647a326319_14413181 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['footerBlocks']->value, 'footerBlock');
 $_smarty_tpl->tpl_vars['footerBlock']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['footerBlock']->value) {
