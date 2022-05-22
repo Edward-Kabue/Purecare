@@ -22,14 +22,25 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+{if $page.page_name == 'about'}
+<div class="about_back">
+<div class="container-fluid">
+			test
+			</div>
+{else}
 <div class="breadcrumb_container " data-depth="{$breadcrumb.count}">
+{/if}
 	<div class="container">
 		{if $page.page_name == 'category'}
 			{if $category.name}
 			<div class="name_category"><h2>{$category.name}</h2></div>
 			{/if}
 		{/if}
-		<nav data-depth="{$breadcrumb.count}" class="breadcrumb">
+		{if $page.page_name == 'about'}
+			{if about}
+			<div class="name_category"><h2>about</h2></div>
+			{else}
+			<nav data-depth="{$breadcrumb.count}" class="breadcrumb">
 		  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
 			{block name='breadcrumb'}
 			  {foreach from=$breadcrumb.links item=path name=breadcrumb}
@@ -45,6 +56,9 @@
 			{/block}
 		  </ol>
 		</nav>
+			{/if}
+		{/if}
+		
 	</div>
 </div>
 

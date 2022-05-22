@@ -5214,7 +5214,22 @@ main {
   }
 }
 /* breadcrumb */
-
+/*about us page*/
+.about_back {
+  text-align: center;
+  position: relative;
+  padding: 110px 0;
+  @media (max-width: 767px) {
+    padding: 30px 0;
+  }
+  background: url(../img/aboutus.jpg) no-repeat;
+  background-size: cover;
+  margin-bottom: -90px;
+}
+.about_img {
+  margin-top: -12em;
+}
+/*about us page*/
 /* category */
 #js-product-list-top {
   ul.display {

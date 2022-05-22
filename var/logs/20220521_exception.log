@@ -1,0 +1,8 @@
+*ERROR* 	v1.7.8.5	2022/05/21 - 16:05:14: Table &#039;alter.ps_pur_zone&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;
+		SELECT cl.*,c.*, cl.`name` country, z.`name` zone
+		FROM `ps_pur_country` c  INNER JOIN ps_pur_country_shop country_shop
+        ON (country_shop.id_country = c.id_country AND country_shop.id_shop = 1)
+		LEFT JOIN `ps_pur_country_lang` cl ON (c.`id_country` = cl.`id_country` AND cl.`id_lang` = 1)
+		LEFT JOIN `ps_pur_zone` z ON (z.`id_zone` = c.`id_zone`)
+		WHERE 1
+		ORDER BY cl.name ASC&lt;/pre&gt; at line 769 in file classes/db/Db.php
