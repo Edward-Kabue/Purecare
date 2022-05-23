@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-21 18:38:05
+/* Smarty version 3.1.43, created on 2022-05-23 12:02:19
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_6289075d5711a0_26189762',
+  'unifunc' => 'content_628b4d9b5846f8_70257210',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '35655e6409b6198f29dd6e732ef9598dec599880' => 
     array (
       0 => 'module:psshoppingcartpsshoppingc',
-      1 => 1652897496,
+      1 => 1581741896,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' => 1,
   ),
 ),false)) {
-function content_6289075d5711a0_26189762 (Smarty_Internal_Template $_smarty_tpl) {
+function content_628b4d9b5846f8_70257210 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="_desktop_cart_block">
 	<div class="blockcart cart-preview" data-refresh-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['refresh_url']->value, ENT_QUOTES, 'UTF-8');?>
 " data-cartitems="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['products_count'], ENT_QUOTES, 'UTF-8');?>

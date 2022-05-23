@@ -1554,6 +1554,16 @@ main {
       display: block;
       line-height: 43px;
     }
+    .pe-7s-user::before {
+      content: '\f110';
+      display: inline-block;
+      font-size: 28px;
+      font-family: 'Ionicons';
+      vertical-align: middle;
+      margin-right: 15px;
+      float: left;
+      font-weight: 400;
+    }
   }
   .dropdown-menu {
     margin: 0;
@@ -5229,6 +5239,28 @@ main {
 .about_img {
   margin-top: -12em;
 }
+.parent_about {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.sub-r {
+  display: flex;
+  margin-bottom: 12px;
+  margin-left: 20px;
+  color: #000;
+}
+.article {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 24px;
+}
+
 /*about us page*/
 /* category */
 #js-product-list-top {

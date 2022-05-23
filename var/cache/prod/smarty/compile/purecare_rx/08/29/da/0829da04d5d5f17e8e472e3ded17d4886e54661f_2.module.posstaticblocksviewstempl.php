@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-21 18:38:05
+/* Smarty version 3.1.43, created on 2022-05-23 12:02:19
   from 'module:posstaticblocksviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_6289075d535f12_69097904',
+  'unifunc' => 'content_628b4d9b519f49_51285321',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0829da04d5d5f17e8e472e3ded17d4886e54661f' => 
     array (
       0 => 'module:posstaticblocksviewstempl',
-      1 => 1652897475,
+      1 => 1580523040,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6289075d535f12_69097904 (Smarty_Internal_Template $_smarty_tpl) {
+function content_628b4d9b519f49_51285321 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['linkBlocks']->value, 'linkBlock');
 $_smarty_tpl->tpl_vars['linkBlock']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['linkBlock']->value) {

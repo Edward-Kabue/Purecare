@@ -676,10 +676,10 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         $b = new \Doctrine\Persistence\Mapping\Driver\MappingDriverChain();
 
         $c = ${($_ = isset($this->services['annotation_reader']) ? $this->services['annotation_reader'] : ($this->services['annotation_reader'] = new \Doctrine\Common\Annotations\AnnotationReader())) && false ?: '_'};
-        $d = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => 'C:\\laragon\\www\\Purecare\\modules\\productcomments\\src\\Entity']);
-        $d->addExcludePaths([0 => 'C:\\laragon\\www\\Purecare\\modules\\productcomments\\src\\Entity/index.php']);
+        $d = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => 'C:\\laragon\\www\\purecare\\modules\\productcomments\\src\\Entity']);
+        $d->addExcludePaths([0 => 'C:\\laragon\\www\\purecare\\modules\\productcomments\\src\\Entity/index.php']);
 
-        $b->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => 'C:\\laragon\\www\\Purecare\\src\\PrestaShopBundle\\Entity']), 'PrestaShop');
+        $b->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => 'C:\\laragon\\www\\purecare\\src\\PrestaShopBundle\\Entity']), 'PrestaShop');
         $b->addDriver($d, 'PrestaShop\\Module\\ProductComment\\Entity');
 
         $a->setEntityNamespaces(['PrestaShopBundle\\Entity' => 'PrestaShop']);
@@ -687,7 +687,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         $a->setQueryCacheImpl(${($_ = isset($this->services['doctrine_cache.providers.doctrine.orm.default_query_cache']) ? $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] : $this->getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService()) && false ?: '_'});
         $a->setResultCacheImpl(${($_ = isset($this->services['doctrine.orm.cache.provider.cache.doctrine.orm.default.result']) ? $this->services['doctrine.orm.cache.provider.cache.doctrine.orm.default.result'] : $this->getDoctrine_Orm_Cache_Provider_Cache_Doctrine_Orm_Default_ResultService()) && false ?: '_'});
         $a->setMetadataDriverImpl($b);
-        $a->setProxyDir('C:\\laragon\\www\\Purecare/var/cache/prod\\/doctrine/orm/Proxies');
+        $a->setProxyDir('C:\\laragon\\www\\purecare/var/cache/prod\\/doctrine/orm/Proxies');
         $a->setProxyNamespace('Proxies');
         $a->setAutoGenerateProxyClasses(false);
         $a->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
@@ -715,7 +715,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_metadata_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_dba9f9d90580275ef8e49b1d942f4d0ed48b7974ca13d60bbe4a53ef43ac6639');
+        $instance->setNamespace('sf_orm_default_d93937346d7bb68bbdc9876219b24c4466f7addd13a4024c77a12471fa8ebcb1');
 
         return $instance;
     }
@@ -729,7 +729,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_dba9f9d90580275ef8e49b1d942f4d0ed48b7974ca13d60bbe4a53ef43ac6639');
+        $instance->setNamespace('sf_orm_default_d93937346d7bb68bbdc9876219b24c4466f7addd13a4024c77a12471fa8ebcb1');
 
         return $instance;
     }
@@ -891,7 +891,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPrestashop_Core_Localization_Cldr_Cache_AdapterService()
     {
-        return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'C:\\laragon\\www\\Purecare/var/cache/prod\\/localization');
+        return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'C:\\laragon\\www\\purecare/var/cache/prod\\/localization');
     }
 
     /**
@@ -901,7 +901,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPrestashop_Core_Localization_Cldr_Datalayer_LocaleCacheService()
     {
-        $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(${($_ = isset($this->services['prestashop.core.localization.cldr.cache.adapter']) ? $this->services['prestashop.core.localization.cldr.cache.adapter'] : ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'C:\\laragon\\www\\Purecare/var/cache/prod\\/localization'))) && false ?: '_'});
+        $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(${($_ = isset($this->services['prestashop.core.localization.cldr.cache.adapter']) ? $this->services['prestashop.core.localization.cldr.cache.adapter'] : ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'C:\\laragon\\www\\purecare/var/cache/prod\\/localization'))) && false ?: '_'});
 
         $instance->setLowerLayer(${($_ = isset($this->services['prestashop.core.localization.cldr.datalayer.locale_reference']) ? $this->services['prestashop.core.localization.cldr.datalayer.locale_reference'] : $this->getPrestashop_Core_Localization_Cldr_Datalayer_LocaleReferenceService()) && false ?: '_'});
 
@@ -2532,12 +2532,12 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'kernel.bundles' => [
 
             ],
-            'kernel.root_dir' => 'C:\\laragon\\www\\Purecare/app',
-            'kernel.project_dir' => 'C:\\laragon\\www\\Purecare',
+            'kernel.root_dir' => 'C:\\laragon\\www\\purecare/app',
+            'kernel.project_dir' => 'C:\\laragon\\www\\purecare',
             'kernel.name' => 'app',
             'kernel.debug' => false,
             'kernel.environment' => 'prod',
-            'kernel.cache_dir' => 'C:\\laragon\\www\\Purecare/var/cache/prod\\',
+            'kernel.cache_dir' => 'C:\\laragon\\www\\purecare/var/cache/prod\\',
             'kernel.active_modules' => [
                 0 => 'blockwishlist',
                 1 => 'contactform',
@@ -2606,26 +2606,25 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
                 64 => 'blocktags',
                 65 => 'poscompare',
                 66 => 'posrotatorimg',
-                67 => 'possearchproducts',
-                68 => 'posmegamenu',
-                69 => 'posslideshows',
-                70 => 'posstaticblocks',
-                71 => 'posstaticfooter',
-                72 => 'posthemeoptions',
-                73 => 'posfeaturedproducts',
-                74 => 'poslistcategories',
-                75 => 'posbestsellers',
-                76 => 'poslogo',
-                77 => 'posnewproducts',
-                78 => 'posspecialproducts',
-                79 => 'poscountdown',
-                80 => 'xipblog',
-                81 => 'xipblogdisplayposts',
-                82 => 'postestimonials',
-                83 => 'prescription',
-                84 => 'ets_whatsapp',
+                67 => 'posmegamenu',
+                68 => 'posslideshows',
+                69 => 'posstaticblocks',
+                70 => 'posstaticfooter',
+                71 => 'posthemeoptions',
+                72 => 'posfeaturedproducts',
+                73 => 'poslistcategories',
+                74 => 'posbestsellers',
+                75 => 'poslogo',
+                76 => 'posnewproducts',
+                77 => 'posspecialproducts',
+                78 => 'poscountdown',
+                79 => 'xipblog',
+                80 => 'xipblogdisplayposts',
+                81 => 'postestimonials',
+                82 => 'prescription',
+                83 => 'possearchproducts',
             ],
-            'ps_cache_dir' => 'C:\\laragon\\www\\Purecare/var/cache/prod\\',
+            'ps_cache_dir' => 'C:\\laragon\\www\\purecare/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',
             'doctrine_cache.apc.class' => 'Doctrine\\Common\\Cache\\ApcCache',
             'doctrine_cache.apcu.class' => 'Doctrine\\Common\\Cache\\ApcuCache',
@@ -2736,7 +2735,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'doctrine.orm.second_level_cache.cache_configuration.class' => 'Doctrine\\ORM\\Cache\\CacheConfiguration',
             'doctrine.orm.second_level_cache.regions_configuration.class' => 'Doctrine\\ORM\\Cache\\RegionsConfiguration',
             'doctrine.orm.auto_generate_proxy_classes' => false,
-            'doctrine.orm.proxy_dir' => 'C:\\laragon\\www\\Purecare/var/cache/prod\\/doctrine/orm/Proxies',
+            'doctrine.orm.proxy_dir' => 'C:\\laragon\\www\\purecare/var/cache/prod\\/doctrine/orm/Proxies',
             'doctrine.orm.proxy_namespace' => 'Proxies',
         ];
     }

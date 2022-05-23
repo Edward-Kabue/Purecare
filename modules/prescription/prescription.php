@@ -62,6 +62,7 @@ class Prescription extends Module
     public function install()
     {
         Configuration::updateValue('PRESCRIPTION_LIVE_MODE', false);
+          Configuration::get('PS_SHOP_EMAIL');
 
         include(dirname(__FILE__).'/sql/install.php');
 
@@ -240,6 +241,7 @@ class Prescription extends Module
     public function hookDisplayCustomerAccountForm()
     {
         /* Place your code here. */
+        
          $this->bootstrap = true;
         $this->context->smarty->assign('module_dir', $this->_path);
         $style =$this->context->controller->addCSS($this->_path.'/views/css/front.css');
@@ -247,6 +249,7 @@ class Prescription extends Module
 
         return $output;
         return $style;
+
     }
 
     public function hookDisplayMyAccountBlock()
