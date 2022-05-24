@@ -32,6 +32,8 @@ class PrescriptionUploadModuleFrontController extends ModuleFrontController
 {
     public function initContent(){
       parent::initContent();
+       $this->context->controller->addJquery();
+        $this->context->controller->bootstrap=true;
        $this->context->controller->addJS($this->_path.'/views/js/front.js');
         $this->context->controller->addCSS($this->_path.'/views/css/front.css');
        $this->context->smarty->assign('message', 'Why no one mentions this!??!');

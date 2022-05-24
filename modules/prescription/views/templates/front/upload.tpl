@@ -22,38 +22,28 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 {extends file='page.tpl'}
 
 {block name='page_header_container'}{/block}
 
-<style>
-#msform fieldset {
-    background: white;
-    border: 0 none;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding-bottom: 20px;
-    position: relative
-}
-</style>
 
 
 {block name='page_content'}
  <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
             <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                 <h2 id="heading">Sign Up Your User Account</h2>
                 <p>Fill all form field to go to next step</p>
                 <form id="msform">
                     <!-- progressbar -->
                     <ul id="progressbar">
-                        <li class="active" id="account"><strong>Account</strong></li>
-                        <li id="personal"><strong>Personal</strong></li>
-                        <li id="payment"><strong>Image</strong></li>
-                        <li id="confirm"><strong>Finish</strong></li>
+                        <li class="active" id="account">
+                        <strong>Submit Prescription</strong></li>
+                        <li id="personal"><strong>Approval & Checkout</strong></li>
+                        <li id="payment"><strong>Payment & Delivery</strong></li>
                     </ul>
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -67,7 +57,12 @@
                                 <div class="col-5">
                                     <h2 class="steps">Step 1 - 4</h2>
                                 </div>
-                            </div> <label class="fieldlabels">Email: *</label> <input type="email" name="email" placeholder="Email Id" /> <label class="fieldlabels">Username: *</label> <input type="text" name="uname" placeholder="UserName" /> <label class="fieldlabels">Password: *</label> <input type="password" name="pwd" placeholder="Password" /> <label class="fieldlabels">Confirm Password: *</label> <input type="password" name="cpwd" placeholder="Confirm Password" />
+                            </div> 
+                              <div class="form-group">
+                        <div class="requiredGroup col-sm-5 col-sm-offset-3">
+                            <input name="fileUpload" id="fileUpload" type="file" class="form-control uploadFile" />
+                            <span class="fileUploadOverlay"></span>
+                        </div>
                         </div> <input type="button" name="next" class="next action-button" value="Next" />
                     </fieldset>
                     <fieldset>

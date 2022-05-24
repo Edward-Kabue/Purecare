@@ -25,15 +25,13 @@
 <section class="categoryproducts clearfix">
 	<div class="pos_title">
 		<h2>
-			{l s='in the same category' d='Shop.Theme.Catalog'}
+		{if $products|@count == 1}
+		{l s='%s other product in the same category:' sprintf=[$products|@count] d='Shop.Theme.Catalog'}
+		{else}
+		{l s='%s other products in the same category:' sprintf=[$products|@count] d='Shop.Theme.Catalog'}
+		{/if}
 		</h2>
-		<div class="desc_title">	
-			{if $products|@count == 1}
-			{l s='%s other product in the same category:' sprintf=[$products|@count] d='Shop.Theme.Catalog'}
-			{else}
-			{l s='%s other products in the same category:' sprintf=[$products|@count] d='Shop.Theme.Catalog'}
-			{/if}
-		</div>
+		<div class="desc_title">{l s='Add same category products to weekly lineup' d='Shop.Theme.Catalog'}</div>
 	</div>
 	<div class="row pos_content">
 		<div class="product_categoryslide owl-carousel">

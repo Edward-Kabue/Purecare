@@ -25,13 +25,49 @@
 {extends file='page.tpl'}
 
     {block name='page_content_container'}
-      <section id="content" class="page-home">
-        {block name='page_content_top'}{/block}
+   
+       
 
         {block name='page_content'}
-          {block name='hook_home'}
-            {$HOOK_HOME nofilter}
-          {/block}
-        {/block}
+        <div class='page_content'></div>
+         <img src="/img/cms/aboutus.jpg" alt="about us"/>
+         <section class="courses">
+         <div class="courses__container container">
+            <div class="courses__heading">
+               <h2>Check out our most popular courses!</h2>
+            </div>
+            <div class="courses__course animation">
+               <h3>Animation</h3>
+               <p>Learn the latest animation techniques to
+                  create stunning motion design and captivate your audience.</p>
+               <a href="#" class="link">Get Started</a>
+            </div>
+            <div class="courses__course design">
+               <h3>Design</h3>
+               <p>Create beautiful, usable interfaces to
+                  help shape the future of how the web looks.</p>
+               <a href="#" class="link">Get Started</a>
+            </div>
+            <div class="courses__course photography">
+               <h3>Photography</h3>
+               <p>Explore critical fundamentals like lighting,
+                  composition, and focus to capture exceptional photos.</p>
+               <a href="#" class="link">Get Started</a>
+            </div>
+            <div class="courses__course crypto">
+               <h3>Crypto</h3>
+               <p>All you need to know to get started investing in crypto.
+                  Go from beginner to advanced with this 54 hour course.</p>
+               <a href="#" class="link">Get Started</a>
+            </div>
+            <div class="courses__course business">
+               <h3>Business</h3>
+               <p>A step-by-step playbook to help you start, scale,
+                  and sustain your business without outside investment.</p>
+               <a href="#" class="link">Get Started</a>
+            </div>
+         </div>
       </section>
+        {/block}
+      
     {/block}

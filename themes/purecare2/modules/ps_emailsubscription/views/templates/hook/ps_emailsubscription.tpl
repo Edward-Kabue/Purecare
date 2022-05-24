@@ -23,34 +23,34 @@
 * International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div class="ft_newsletter col-footer"> 
-	<p>{$conditions}</p>
-	<div class="col col_form">
-		<form action="{$urls.pages.index}#footer" method="post">
-			<input
-			class="btn btn-primary"
-			name="submitNewsletter"
-			type="submit"
-			value="{l s='Sign up' d='Shop.Theme.Actions'}"
-			>
-			<div class="input-wrapper">
-			<input
-			name="email"
-			type="email"
-			value="{$value}"
-			placeholder="{l s='Your email address' d='Shop.Forms.Labels'}"
-			>
-			</div>
-			<input type="hidden" name="action" value="0">
-			<div class="clearfix"></div>
-			{if $msg}
-			<p class="alert {if $nw_error}alert-danger{else}alert-success{/if}">
-			{$msg}
-			</p>
-			{/if}
-			{if isset($id_module)}
-			{hook h='displayGDPRConsent' id_module=$id_module}
-			{/if}
-		</form>
-	</div>
+<div class="ft_newsletter">
+	{if $conditions}
+	<div class="des_newsletter">{$conditions}</div>
+	{/if}
+	<form action="{$urls.pages.index}#footer" method="post">
+		<input
+		class="btn btn-primary"
+		name="submitNewsletter"
+		type="submit"
+		value="{l s='Subscribe' d='Shop.Theme.Actions'}"
+		>
+		<div class="input-wrapper">
+		<input
+		name="email"
+		type="email"
+		value="{$value}"
+		placeholder="{l s='Your email address' d='Shop.Forms.Labels'}"
+		>
+		</div>
+		<input type="hidden" name="action" value="0">
+		<div class="clearfix"></div>
+		{if $msg}
+		<p class="alert {if $nw_error}alert-danger{else}alert-success{/if}">
+		{$msg}
+		</p>
+		{/if}
+		{if isset($id_module)}
+		{hook h='displayGDPRConsent' id_module=$id_module}
+		{/if}
+	</form>
 </div>

@@ -2,10 +2,11 @@
 	<div class="blockcart cart-preview" data-refresh-url="{$refresh_url}" data-cartitems="{$cart.products_count}">
 		<div class="button_cart">
 			<a rel="nofollow" href="{$cart_url}" class="desktop hidden-md-down">
+				 <i class="pe-7s-shopbag"></i> 
 				 <span class="item_count">{$cart.products_count}</span>
-				 <span class="item_total">{$cart.totals.total.value}</span>
 			</a>
 			<a rel="nofollow" href="{$cart_url}" class="mobile hidden-lg-up">
+				<i class="pe-7s-shopbag"></i> 
 				<span class="item_count">{$cart.products_count}</span>
 			</a>
 		</div>

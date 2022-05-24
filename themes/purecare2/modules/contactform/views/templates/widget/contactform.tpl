@@ -108,6 +108,8 @@
             >{if $contact.message}{$contact.message}{/if}</textarea>
           </div>
         </div>
+		
+		
 
         {if isset($id_module)}
           <div class="form-group row">
