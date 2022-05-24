@@ -2623,6 +2623,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
                 81 => 'postestimonials',
                 82 => 'prescription',
                 83 => 'possearchproducts',
+                84 => 'gformbuilderpro',
             ],
             'ps_cache_dir' => 'C:\\laragon\\www\\purecare/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',

@@ -32,7 +32,7 @@
 <nav class="header-nav">
 	<div class="container">
 		<div class="hidden-md-down">
-			{hook h='displayNav'}
+		
 		</div>
 		<div class="hidden-lg-up  mobile">
 			<div class="row row-mobile">

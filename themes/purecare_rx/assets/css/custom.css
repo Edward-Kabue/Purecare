@@ -16832,7 +16832,7 @@ main {
   line-height: 43px;
 }
 .pe-7s-user::before {
-  content: '\f110';
+  content: '\f2d8';
   display: inline-block;
   font-size: 28px;
   font-family: 'Ionicons';
