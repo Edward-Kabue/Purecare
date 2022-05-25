@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-05-25 16:11:30
+/* Smarty version 3.1.43, created on 2022-05-25 16:17:33
   from 'module:poscompareviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_628e2b02b248c1_94647932',
+  'unifunc' => 'content_628e2c6dba6dd4_24256595',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_628e2b02b248c1_94647932 (Smarty_Internal_Template $_smarty_tpl) {
+function content_628e2c6dba6dd4_24256595 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="_desktop_compare">
 	<div class="compare_top">
 		<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['content_dir']->value, ENT_QUOTES, 'UTF-8');?>

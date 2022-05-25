@@ -37,7 +37,6 @@ class AboutControllerCore extends FrontController
         parent::initContent();
         $this->context->smarty->assign([
             'HOOK_HOME' => Hook::exec('displayHome'),
-            'HOOK_TEST' => Hook::exec('displayFulltop2')
         ]);
         $this->setTemplate('about');
     }
