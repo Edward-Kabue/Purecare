@@ -69,6 +69,8 @@ class Prescription extends Module
         return parent::install() &&
             $this->registerHook('header') &&
             $this->registerHook('backOfficeHeader') &&
+            $this->registerHook('displayBackOfficeHeader') && 
+            $this->registerHook('actionAdminControllerSetMedia') && 
             $this->registerHook('dashboardData') &&
             $this->registerHook('displayCustomerAccount') &&
             $this->registerHook('displayCustomerAccountForm') &&
@@ -83,6 +85,31 @@ class Prescription extends Module
 
         return parent::uninstall();
     }
+
+ public function installTab()
+    {
+        $tab = new Tab();
+        $tab->active = 1;
+        $tab->class_name = "AdminPrescription";
+        $tab->name = array();
+        foreach (Language::getLanguages(true) as $lang) {
+            $tab->name[$lang['id_lang']] = "Pos Staticblocks";
+        }
+        $tab->id_parent = (int)Tab::getIdFromClassName('AdminParentThemes');
+        $tab->module = $this->name;
+        return $tab->add();
+    }
+
+    public function uninstallTab()
+    {
+        $id_tab = (int)Tab::getIdFromClassName('AdminPrescription');
+        $tab = new Tab($id_tab);
+        return $tab->delete();
+    }
+
+
+
+
 
     /**
      * Load the configuration form

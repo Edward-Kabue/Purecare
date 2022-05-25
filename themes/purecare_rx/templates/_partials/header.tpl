@@ -98,15 +98,14 @@
 <div class="header-top hidden-md-down">
 	<div class="container">
 		<div class="row">
-		
-			<div class=" col col-lg-9 col-sm-12 position-static">
-				{hook h='displaymegamenu'}
-			
+			<div class="col col col-md-9">
+			{hook h='displaymegamenu'}
+			</div>	
+			<div class="col col col-md-3">
+					{hook h='displayNav2'}
 			</div>
-
 		</div>
 	</div>
-
 </div>
 
 {hook h='displayNavFullWidth'}

@@ -24,6 +24,7 @@
  *}
 {if !$configuration.is_catalog}
 {if ($product.quantity > 0 || $product.allow_oosp)}
+{if (category == "prescriptions")}
 <div class="product-add-to-cart">	
  <form action="{$urls.pages.cart}" method="post" class="add-to-cart-or-refresh">
    <input type="hidden" name="token" value="{$static_token}">
@@ -38,3 +39,4 @@
 	<span class="ajax_add_to_cart_button disabled" title="{l s='Out of stock' d='Shop.Theme.Actions'}" ><i class="fa fa-shopping-cart"></i> {l s='Add to cart' d='Shop.Theme.Actions'}</span>
 {/if}
 {/if} 
+{/if}

@@ -253,7 +253,9 @@ class Gformbuilderpro extends Module
                                         `' . _DB_PREFIX_ . 'gformrequest`,
                                         `' . _DB_PREFIX_ . 'gformrequest_reply`,
                                         `' . _DB_PREFIX_ . 'gformrequest_shop`,
-                                      
+                                        `' . _DB_PREFIX_ . 'gform_analytics`,
+                                        `' . _DB_PREFIX_ . 'gform_mailchimp_klaviyo_map`,
+                                        `' . _DB_PREFIX_ . 'gform_integration_map`;
         ');
     }
     public function _createTab()
@@ -295,7 +297,10 @@ class Gformbuilderpro extends Module
                 'class'=>'AdminGformrequestexport',
                 'name'=>$this->l('CSV Export')
             ),
-            
+            array(
+                'class'=>'AdminGformanalytics',
+                'name'=>$this->l('Analytics')
+            ),
         );
         foreach($subtabs as $subtab){
             $idtab = Tab::getIdFromClassName($subtab['class']);
@@ -316,7 +321,7 @@ class Gformbuilderpro extends Module
     }
     public function _deleteTab()
     {
-        $id_tabs = array('AdminGformconfig','AdminGformmanager','AdminGformrequest','AdminGformrequestexport','AdminGformdashboard','AdminGformbuilderpro');
+        $id_tabs = array('AdminGformconfig','AdminGformmanager','AdminGformrequest','AdminGformrequestexport','AdminGformdashboard','AdminGformanalytics','AdminGformbuilderpro');
         foreach($id_tabs as $id_tab){
             $idtab = Tab::getIdFromClassName($id_tab);
             $tab = new Tab((int)$idtab);
@@ -383,7 +388,40 @@ class Gformbuilderpro extends Module
 		}
         return $res;
     }
-   
+    public function setBrowserAnalytics($id_form,$ip_address,$id_customer=0,$id_shop = 0){
+        /* check is exist */
+        if($id_form > 0){
+            if($id_shop == 0) $id_shop = (int)Context::getContext()->shop->id;
+            include_once(_PS_MODULE_DIR_ . 'gformbuilderpro/classes/BrowserLib.php');
+            $BrowserLib = new BrowserLib();
+            $browser = $BrowserLib->getBrowser();
+            $platform = $BrowserLib->getPlatform();
+            $sql = 'SELECT id_gform_analytics
+                    FROM `' . _DB_PREFIX_ . 'gform_analytics`
+                    WHERE id_gformbuilderpro = '.(int)$id_form.' AND
+                        ip_address = "'.pSql($ip_address).'" AND
+                        id_customer = '.(int)$id_customer.' AND
+                        browser = "'.pSql($browser).'" AND
+                        platform = "'.pSql($platform).'" AND
+                        DAY(date_add) ="'.pSql(date('d')).'" AND
+                        MONTH(date_add) ="'.pSql(date('m')).'" AND
+                        YEAR(date_add) ="'.pSql(date('Y')).'"';
+            $nbr = Db::getInstance()->getValue($sql);
+            if(!$nbr){
+                $browser_version = '';
+                $user_agent = '';
+                if($browser != ''){
+                    $browser_version = $BrowserLib->getVersion();
+                    $user_agent = $BrowserLib->getUserAgent();
+                }else{
+                    $browser = $this->l('Unknown');
+                }
+                $sql = 'INSERT INTO `' . _DB_PREFIX_ . 'gform_analytics`(id_gformbuilderpro,ip_address,id_customer,browser,browser_version,user_agent,platform,date_add,id_shop) VALUES
+                ('.(int)$id_form.',"'.pSql($ip_address).'",'.(int)$id_customer.',"'.pSql($browser).'","'.pSql($browser_version).'","'.pSql($user_agent).'","'.pSql($platform).'","'.pSql(date('Y-m-d H:i:s')).'",'.(int)$id_shop.')';
+                Db::getInstance()->execute($sql);
+            }
+        }
+    }
     public function getContent()
 	{
         if (Tools::isSubmit('duplicateField')){

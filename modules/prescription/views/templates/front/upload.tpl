@@ -31,88 +31,64 @@
 
 
 {block name='page_content'}
- <div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                <h2 id="heading">Sign Up Your User Account</h2>
-                <p>Fill all form field to go to next step</p>
-                <form id="msform">
-                    <!-- progressbar -->
-                    <ul id="progressbar">
-                        <li class="active" id="account">
-                        <strong>Submit Prescription</strong></li>
-                        <li id="personal"><strong>Approval & Checkout</strong></li>
-                        <li id="payment"><strong>Payment & Delivery</strong></li>
-                    </ul>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div> <br> <!-- fieldsets -->
-                    <fieldset>
-                        <div class="form-card">
-                            <div class="row">
-                                <div class="col-7">
-                                    <h2 class="fs-title">Account Information:</h2>
-                                </div>
-                                <div class="col-5">
-                                    <h2 class="steps">Step 1 - 4</h2>
-                                </div>
-                            </div> 
-                              <div class="form-group">
-                        <div class="requiredGroup col-sm-5 col-sm-offset-3">
-                            <input name="fileUpload" id="fileUpload" type="file" class="form-control uploadFile" />
-                            <span class="fileUploadOverlay"></span>
-                        </div>
-                        </div> <input type="button" name="next" class="next action-button" value="Next" />
-                    </fieldset>
-                    <fieldset>
-                        <div class="form-card">
-                            <div class="row">
-                                <div class="col-7">
-                                    <h2 class="fs-title">Personal Information:</h2>
-                                </div>
-                                <div class="col-5">
-                                    <h2 class="steps">Step 2 - 4</h2>
-                                </div>
-                            </div> <label class="fieldlabels">First Name: *</label> <input type="text" name="fname" placeholder="First Name" /> <label class="fieldlabels">Last Name: *</label> <input type="text" name="lname" placeholder="Last Name" /> <label class="fieldlabels">Contact No.: *</label> <input type="text" name="phno" placeholder="Contact No." /> <label class="fieldlabels">Alternate Contact No.: *</label> <input type="text" name="phno_2" placeholder="Alternate Contact No." />
-                        </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                    </fieldset>
-                    <fieldset>
-                        <div class="form-card">
-                            <div class="row">
-                                <div class="col-7">
-                                    <h2 class="fs-title">Image Upload:</h2>
-                                </div>
-                                <div class="col-5">
-                                    <h2 class="steps">Step 3 - 4</h2>
-                                </div>
-                            </div> <label class="fieldlabels">Upload Your Photo:</label> <input type="file" name="pic" accept="image/*"> <label class="fieldlabels">Upload Signature Photo:</label> <input type="file" name="pic" accept="image/*">
-                        </div> <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                    </fieldset>
-                    <fieldset>
-                        <div class="form-card">
-                            <div class="row">
-                                <div class="col-7">
-                                    <h2 class="fs-title">Finish:</h2>
-                                </div>
-                                <div class="col-5">
-                                    <h2 class="steps">Step 4 - 4</h2>
-                                </div>
-                            </div> <br><br>
-                            <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
-                            <div class="row justify-content-center">
-                                <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
-                            </div> <br><br>
-                            <div class="row justify-content-center">
-                                <div class="col-7 text-center">
-                                    <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
+{if isset($multi) && $multi}
+    {if $labelpos == 0 || $labelpos == 3}
+        <div class="form-group multifileupload_box">
+        	{if $labelpos == 0}
+        	<label for="{$idatt|escape:'html':'UTF-8'}" {if $required} class="required_label"{/if}>{$label|escape:'html':'UTF-8'}</label>
+            {/if}
+        	<input  data-no-uniform="true"  multiple type="file" name="{$name|escape:'html':'UTF-8'}[]" id="{$idatt|escape:'html':'UTF-8'}" class="form-control {$classatt|escape:'html':'UTF-8'} filestyle multifileupload" data-buttonName="btn-primary"  data-buttonText="{literal}{if isset($button_upload_text)}{$button_upload_text}{else}{l s='Choose file' mod='gformbuilderpro'}{/if}{/literal}" />
+            {if $description!=''}<p class="help-block">{$description|escape:'html':'UTF-8'}</p>{/if}
+         </div>
+    {else}
+        <div class="form-group multifileupload_box">
+            <div class="row">
+                {if $labelpos == 1}
+                <div class="col-xs-12 col-md-4">
+            	   <label for="{$idatt|escape:'html':'UTF-8'}" {if $required} class="required_label"{/if}>{$label|escape:'html':'UTF-8'}</label>
+                </div>  
+                {/if} 
+                <div class="col-xs-12 col-md-8">
+                    <input data-no-uniform="true" multiple type="file" name="{$name|escape:'html':'UTF-8'}[]" id="{$idatt|escape:'html':'UTF-8'}" class="form-control {$classatt|escape:'html':'UTF-8'} filestyle multifileupload" data-buttonName="btn-primary"  data-buttonText="{literal}{if isset($button_upload_text)}{$button_upload_text}{else}{l s='Choose file' mod='gformbuilderpro'}{/if}{/literal}" />
+        	       {if $description!=''}<p class="help-block">{$description|escape:'html':'UTF-8'}</p>{/if}
+                </div>
+                {if $labelpos == 2}
+                <div class="col-xs-12 col-md-4">
+            	   <label for="{$idatt|escape:'html':'UTF-8'}" {if $required} class="required_label"{/if}>{$label|escape:'html':'UTF-8'}</label>
+                </div>  
+                {/if}
             </div>
         </div>
-    </div>
-</div>
+    {/if}
+{else}
+    {if $labelpos == 0 || $labelpos == 3}
+        <div class="form-group fileupload_box">
+        	{if $labelpos == 0}
+        	<label for="{$idatt|escape:'html':'UTF-8'}" {if $required} class="required_label"{/if}>{$label|escape:'html':'UTF-8'}</label>
+            {/if}
+        	<input type="file" name="{$name|escape:'html':'UTF-8'}" id="{$idatt|escape:'html':'UTF-8'}" class="form-control {$classatt|escape:'html':'UTF-8'} filestyle" data-buttonName="btn-primary"  data-buttonText="{literal}{if isset($button_upload_text)}{$button_upload_text}{else}{l s='Choose file' mod='gformbuilderpro'}{/if}{/literal}" />
+            {if $description!=''}<p class="help-block">{$description|escape:'html':'UTF-8'}</p>{/if}
+         </div>
+    {else}
+        <div class="form-group fileupload_box">
+            <div class="row">
+                {if $labelpos == 1}
+                <div class="col-xs-12 col-md-4">
+            	   <label for="{$idatt|escape:'html':'UTF-8'}" {if $required} class="required_label"{/if}>{$label|escape:'html':'UTF-8'}</label>
+                </div>  
+                {/if}
+                <div class="col-xs-12 col-md-8">
+                    <input type="file" name="{$name|escape:'html':'UTF-8'}" id="{$idatt|escape:'html':'UTF-8'}" class="form-control {$classatt|escape:'html':'UTF-8'} filestyle" data-buttonName="btn-primary"  data-buttonText="{literal}{if isset($button_upload_text)}{$button_upload_text}{else}{l s='Choose file' mod='gformbuilderpro'}{/if}{/literal}" />
+        	       {if $description!=''}<p class="help-block">{$description|escape:'html':'UTF-8'}</p>{/if}
+                </div>
+                {if $labelpos == 2}
+                <div class="col-xs-12 col-md-4">
+            	   <label for="{$idatt|escape:'html':'UTF-8'}" {if $required} class="required_label"{/if}>{$label|escape:'html':'UTF-8'}</label>
+                </div>  
+                {/if}
+            </div>
+        </div>
+    {/if}
+{/if}
+ {hook h='displayGform' id='1'}
 {/block}
