@@ -27,7 +27,8 @@ $sql = array();
 
 $sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'prescription` (
     `id_prescription` int(11) NOT NULL AUTO_INCREMENT,
-    PRIMARY KEY  (`id_prescription`)
+    PRIMARY KEY  (`id_prescription`),
+	`img` VARBINARY(100) NULL,
 ) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=utf8;';
 
 foreach ($sql as $query) {

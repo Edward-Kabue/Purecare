@@ -28,8 +28,12 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 
+
 class Prescription extends Module
+
 {
+     
+
     protected $config_form = false;
 
     public function __construct()
