@@ -26,13 +26,72 @@
  * to avoid any conflicts with others containers.
  */
 
+$(function () {
+  //file input field trigger when the drop box is clicked
+  $('#dropBox').click(function () {
+    $('#fileInput').click();
+  });
+
+  //prevent browsers from opening the file when its dragged and dropped
+  $(document).on('drop dragover', function (e) {
+    e.preventDefault();
+  });
+
+  //call a function to handle file upload on select file
+  $('input[type=file]').on('change', fileUpload);
+});
+
+function fileUpload(event) {
+  //notify user about the file upload status
+  $('#dropBox').html(event.target.value + ' uploading...');
+
+  //get selected file
+  files = event.target.files;
+
+  //form data check the above bullet for what it is
+  var data = new FormData();
+
+  //file data is presented as an array
+  for (var i = 0; i < files.length; i++) {
+    var file = files[i];
+    if (!file.type.match('image.*')) {
+      //check file type
+      $('#dropBox').html('Please choose an images file.');
+    } else if (file.size > 1048576) {
+      //check file size (in bytes)
+      $('#dropBox').html('Sorry, your file is too large (>1 MB)');
+    } else {
+      //append the uploadable file to FormData object
+      data.append('file', file, file.name);
+
+      //create a new XMLHttpRequest
+      var xhr = new XMLHttpRequest();
+
+      //post file data for upload
+      xhr.open('POST', 'upload.php', true);
+      xhr.send(data);
+      xhr.onload = function () {
+        //get response and show the uploading status
+        var response = JSON.parse(xhr.responseText);
+        if (xhr.status === 200 && response.status == 'ok') {
+          $('#dropBox').html(
+            'File has been uploaded successfully. Click to upload another.'
+          );
+        } else if (response.status == 'type_err') {
+          $('#dropBox').html(
+            'Please choose an images file. Click to upload another.'
+          );
+        } else {
+          $('#dropBox').html('Some problem occured, please try again.');
+        }
+      };
+    }
+  }
+}
+
 $(document).ready(function () {
   var current_fs, next_fs, previous_fs; //fieldsets
   var opacity;
-  var current = 1;
-  var steps = $('fieldset').length;
-
-  setProgressBar(current);
 
   $('.next').click(function () {
     current_fs = $(this).parent();
@@ -57,10 +116,9 @@ $(document).ready(function () {
           });
           next_fs.css({ opacity: opacity });
         },
-        duration: 500,
+        duration: 600,
       }
     );
-    setProgressBar(++current);
   });
 
   $('.previous').click(function () {
@@ -89,19 +147,48 @@ $(document).ready(function () {
           });
           previous_fs.css({ opacity: opacity });
         },
-        duration: 500,
+        duration: 600,
       }
     );
-    setProgressBar(--current);
   });
 
-  function setProgressBar(curStep) {
-    var percent = parseFloat(100 / steps) * curStep;
-    percent = percent.toFixed();
-    $('.progress-bar').css('width', percent + '%');
-  }
+  $('.radio-group .radio').click(function () {
+    $(this).parent().find('.radio').removeClass('selected');
+    $(this).addClass('selected');
+  });
 
   $('.submit').click(function () {
     return false;
   });
 });
+
+('use strict');
+
+(function (document, window, index) {
+  var inputs = document.querySelectorAll('.inputfile');
+  Array.prototype.forEach.call(inputs, function (input) {
+    var label = input.nextElementSibling,
+      labelVal = label.innerHTML;
+
+    input.addEventListener('change', function (e) {
+      var fileName = '';
+      if (this.files && this.files.length > 1)
+        fileName = (this.getAttribute('data-multiple-caption') || '').replace(
+          '{count}',
+          this.files.length
+        );
+      else fileName = e.target.value.split('\\').pop();
+
+      if (fileName) label.querySelector('span').innerHTML = fileName;
+      else label.innerHTML = labelVal;
+    });
+
+    // Firefox bug fix
+    input.addEventListener('focus', function () {
+      input.classList.add('has-focus');
+    });
+    input.addEventListener('blur', function () {
+      input.classList.remove('has-focus');
+    });
+  });
+})(document, window, 0);

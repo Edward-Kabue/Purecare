@@ -23,19 +23,21 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
  */
+
 /**
  * <ModuleClassName> => prescription
  * <FileName> => prescriptionpage.php
  * Format expected: <ModuleClassName><FileName>ModuleFrontController
+ * @property $_path
  */
 class PrescriptionUploadModuleFrontController extends ModuleFrontController
 {
     public function initContent(){
       parent::initContent();
        $this->context->controller->addJquery();
-        $this->context->controller->bootstrap=true;
-       $this->context->controller->addJS($this->_path.'/views/js/front.js');
-        $this->context->controller->addCSS($this->_path.'/views/css/front.css');
+       $this->context->controller->bootstrap=true;
+       $this->context->controller->addJS('module:prescription/views/js/front.js');
+       $this->context->controller->addCSS('module:prescription/views/css/front.css');
        $this->context->smarty->assign('message', 'Why no one mentions this!??!');
         
        $this->setTemplate('module:prescription/views/templates/front/upload.tpl');

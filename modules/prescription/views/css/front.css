@@ -25,6 +25,8 @@
 * Don't forget to prefix your containers with your own identifier
 * to avoid any conflicts with others containers.
 */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css');
 
 @font-face {
   font-family: 'Material Icons';
@@ -55,6 +57,11 @@ html {
 
 p {
   color: grey;
+}
+
+.prescription {
+  display: flex;
+  justify-content: center;
 }
 
 #heading {

@@ -1,0 +1,9 @@
+*ERROR* 	v1.7.8.5	2022/05/27 - 06:04:08: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database &#039;alter&#039; at line 136 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.5	2022/05/27 - 06:04:20: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database &#039;alter&#039; at line 136 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.5	2022/05/27 - 06:04:22: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database &#039;alter&#039; at line 136 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.5	2022/05/27 - 06:04:23: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database &#039;alter&#039; at line 136 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.5	2022/05/27 - 06:04:24: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database &#039;alter&#039; at line 136 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.5	2022/05/27 - 06:04:25: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database &#039;alter&#039; at line 136 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.5	2022/05/27 - 06:04:26: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database &#039;alter&#039; at line 136 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.5	2022/05/27 - 06:04:27: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database &#039;alter&#039; at line 136 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.5	2022/05/27 - 06:04:35: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database &#039;alter&#039; at line 136 in file classes/db/DbPDO.php
