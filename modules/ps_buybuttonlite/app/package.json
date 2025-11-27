@@ -11,7 +11,7 @@
     "axios": "^1.13.2",
     "element-ui": "^2.4.6",
     "vue": "^3.0.0",
-    "webpack": "^5.102.1"
+    "webpack": "^5.103.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
